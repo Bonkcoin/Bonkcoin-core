@@ -50,7 +50,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Boncoin"
-#define QAPP_ORG_DOMAIN "bonscoin.io"
+#define QAPP_ORG_DOMAIN "bonkscoin.io"
 #define QAPP_APP_NAME_DEFAULT "Boncoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Boncoin-Qt-testnet"
 

@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Boncoin meme mining cryptocurrency was born";
+    const char* pszTimestamp = "Bonkcoin meme mining cryptocurrency was born";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -161,7 +161,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("bonscoin.io", "dnsseed.bonscoin.io"));
+        vSeeds.push_back(CDNSSeedData("bonkscoin.io", "dnsseed.bonkscoin.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25); // Addresses start with S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,28);
@@ -315,7 +315,7 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        // vSeeds.push_back(CDNSSeedData("bonscoin.io", "seeds-testnet.bonscoin.io"));
+        // vSeeds.push_back(CDNSSeedData("bonkscoin.io", "seeds-testnet.bonkscoin.io"));
         // vSeeds.push_back(CDNSSeedData("bonblocks.com", "seeds-testnet.bonblocks.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,113); // 0x71

@@ -99,11 +99,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Boncoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Boncoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -217,7 +217,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bonkcoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your boncoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -347,8 +347,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a Bonkcoin address</source>
-        <translation>Тангаларни Bonkcoin манзилига жўнатиш</translation>
+        <source>Send coins to a Boncoin address</source>
+        <translation>Тангаларни Boncoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -371,8 +371,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>Bonkcoin</source>
-        <translation>Bonkcoin</translation>
+        <source>Boncoin</source>
+        <translation>Boncoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -399,12 +399,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your Bonkcoin addresses to prove you own them</source>
-        <translation>Bonkcoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Boncoin addresses to prove you own them</source>
+        <translation>Boncoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bonkcoin addresses</source>
-        <translation>Хабарларни махсус Bonkcoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Boncoin addresses</source>
+        <translation>Хабарларни махсус Boncoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -423,8 +423,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bonkcoin: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва bonkcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and boncoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва boncoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -435,17 +435,17 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a bonkcoin: URI or payment request</source>
-        <translation>Bonkcoin’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a boncoin: URI or payment request</source>
+        <translation>Boncoin’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bonkcoin network</source>
+        <source>%n active connection(s) to Boncoin network</source>
         <translation>
-            <numerusform>%n та Bonkcoin тармоғига фаол уланиш мавжуд</numerusform>
+            <numerusform>%n та Boncoin тармоғига фаол уланиш мавжуд</numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -530,11 +530,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Bonkcoin private key</source>
+        <source>Import a Boncoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bonkcoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Boncoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -614,7 +614,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bonkcoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Boncoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -808,7 +808,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Bonkcoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Boncoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -996,7 +996,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bonkcoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Boncoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
@@ -1029,11 +1029,11 @@
         <translation>Сўнгги блок вақти</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bonkcoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the boncoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Attempting to spend bonkcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend boncoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1259,7 +1259,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Automatically open the Bonkcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Boncoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1267,7 +1267,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Boncoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1295,7 +1295,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Boncoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1350,8 +1350,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bonkcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Bonkcoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Boncoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Boncoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1458,11 +1458,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Bonkcoin Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Boncoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your bonkcoins are always ponzi schemes</source>
+        <source>Services that claim to double your boncoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1648,7 +1648,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cannot start bonkcoin: click-to-pay handler</source>
+        <source>Cannot start boncoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1664,7 +1664,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bonkcoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Boncoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1797,8 +1797,8 @@ p, li { white-space: pre-wrap; }
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a Bonkcoin address (e.g. %1)</source>
-        <translation>Bonkcoin манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Boncoin address (e.g. %1)</source>
+        <translation>Boncoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -2327,7 +2327,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bonkcoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Boncoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2564,7 +2564,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bonkcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for boncoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2684,7 +2684,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Warning: Invalid Bonkcoin address</source>
+        <source>Warning: Invalid Boncoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2747,7 +2747,7 @@ p, li { white-space: pre-wrap; }
         <translation>Тўлов олувчи:</translation>
     </message>
     <message>
-        <source>The Bonkcoin address to send the payment to</source>
+        <source>The Boncoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2759,7 +2759,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bonkcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less boncoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2767,7 +2767,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>A message that was attached to the bonkcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bonkcoin network.</source>
+        <source>A message that was attached to the boncoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Boncoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2840,11 +2840,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bonkcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive boncoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Bonkcoin address to sign the message with</source>
+        <source>The Boncoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2856,7 +2856,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bonkcoin address</source>
+        <source>Sign the message to prove you own this Boncoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2876,11 +2876,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The Bonkcoin address the message was signed with</source>
+        <source>The Boncoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bonkcoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Boncoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3517,8 +3517,8 @@ p, li { white-space: pre-wrap; }
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-        <source>Bonkcoin Core</source>
-        <translation>Bonkcoin Core</translation>
+        <source>Boncoin Core</source>
+        <translation>Boncoin Core</translation>
     </message>
     <message>
         <source>Connection options:</source>
@@ -3573,7 +3573,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Bitcoin Core and Bonkcoin Core</source>
+        <source>Bitcoin Core and Boncoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -14,7 +14,7 @@ The Boncoin Core software allows anyone to operate a node in the Boncoin blockch
 For information about the default fees used on the Boncoin network, please
 refer to the [fee recommendation](doc/fee-recommendation.md).
 
-**Website:** [bonscoin.io](https://bonscoin.io/)
+**Website:** [bonkscoin.io](https://bonkscoin.io/)
 
 ## Dogecoin Differences
 
@@ -31,7 +31,7 @@ Changes:
 * Coin ticker  : BONC
 * Algorithm    : Scrypt
 * Block Time   : 60 seconds
-* Explorer 1   : https://explorer.bonscoin.io/
+* Explorer 1   : https://explorer.bonkscoin.io/
 * Explorer 2   : https://bonscan.net/ 
 * github       : https://github.com/Boncoin/Boncoin-core/
 * Wallet       : https://github.com/Boncoin/Boncoin-core/releases/tag/wallet
@@ -154,7 +154,7 @@ Here are some places to visit:
 
 
 * [Discord](https://discord.gg/7rauZW3EWV)
-* [Website](https://bonscoin.io/)
+* [Website](https://bonkscoin.io/)
 * [Telegram](https://t.me/bonscoin)
 * [X](https://x.com/boncoinpow)
 

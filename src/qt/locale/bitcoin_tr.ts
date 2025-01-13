@@ -99,12 +99,12 @@
         <translation>Alım adresleri</translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için kullanacağınız Bonkcoin adreslerinizdir. Bonkcoin yollamadan önce tutarı ve alıcının alım adresini her zaman kontrol ediniz.</translation>
+        <source>These are your Boncoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için kullanacağınız Boncoin adreslerinizdir. Boncoin yollamadan önce tutarı ve alıcının alım adresini her zaman kontrol ediniz.</translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için kullanacağınız Bonkcoin adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
+        <source>These are your Boncoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için kullanacağınız Boncoin adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -217,8 +217,8 @@
         <translation>Cüzdan şifrelendi</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bonkcoins from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işleminin bitirilmesi için %1 kapatılacak. Her ne kadar cüzdanınızı şifreleseniz de şifrelemenin bonkcoinlerinizi bilgisayarınıza bulaşan zararlılardan tam olarak koruyamayacağını unutmayın.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your boncoins from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işleminin bitirilmesi için %1 kapatılacak. Her ne kadar cüzdanınızı şifreleseniz de şifrelemenin boncoinlerinizi bilgisayarınıza bulaşan zararlılardan tam olarak koruyamayacağını unutmayın.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -367,8 +367,8 @@
         <translation>Diskteki bloklar yeniden indeksleniyor...</translation>
     </message>
     <message>
-        <source>Send coins to a Bonkcoin address</source>
-        <translation>Bir bonkcoin adresine bonkcoin gönder</translation>
+        <source>Send coins to a Boncoin address</source>
+        <translation>Bir boncoin adresine boncoin gönder</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -391,8 +391,8 @@
         <translation>İletiyi &amp;kontrol et...</translation>
     </message>
     <message>
-        <source>Bonkcoin</source>
-        <translation>Bonkcoin</translation>
+        <source>Boncoin</source>
+        <translation>Boncoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -419,12 +419,12 @@
         <translation>Cüzdanınıza ait özel anahtarları şifreleyin</translation>
     </message>
     <message>
-        <source>Sign messages with your Bonkcoin addresses to prove you own them</source>
-        <translation>İletileri adreslerin size ait olduğunu ispatlamak için Bonkcoin adresleri ile imzala</translation>
+        <source>Sign messages with your Boncoin addresses to prove you own them</source>
+        <translation>İletileri adreslerin size ait olduğunu ispatlamak için Boncoin adresleri ile imzala</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bonkcoin addresses</source>
-        <translation>Belirtilen Bonkcoin adresleri ile imzalandıklarından emin olmak için iletileri kontrol et</translation>
+        <source>Verify messages to ensure they were signed with specified Boncoin addresses</source>
+        <translation>Belirtilen Boncoin adresleri ile imzalandıklarından emin olmak için iletileri kontrol et</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -443,8 +443,8 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bonkcoin: URIs)</source>
-        <translation>Ödeme talep et (QR kodu ve bonkcoin URI&apos;si oluşturur)</translation>
+        <source>Request payments (generates QR codes and boncoin: URIs)</source>
+        <translation>Ödeme talep et (QR kodu ve boncoin URI&apos;si oluşturur)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -455,17 +455,17 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a bonkcoin: URI or payment request</source>
-        <translation>Bir bonkcoin: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a boncoin: URI or payment request</source>
+        <translation>Bir boncoin: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bonkcoin network</source>
+        <source>%n active connection(s) to Boncoin network</source>
         <translation>
-            <numerusform>Bonkcoin şebekesine %n faal bağlantı</numerusform>
+            <numerusform>Boncoin şebekesine %n faal bağlantı</numerusform>
         </translation>
     </message>
     <message>
@@ -511,8 +511,8 @@
         <translation>Güncel</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bonkcoin command-line options</source>
-        <translation>Olası Bonkcoin komut satırı seçeneklerinin listesini görmek için %1 yardım mesajını göster</translation>
+        <source>Show the %1 help message to get a list with possible Boncoin command-line options</source>
+        <translation>Olası Boncoin komut satırı seçeneklerinin listesini görmek için %1 yardım mesajını göster</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -581,8 +581,8 @@
         <translation>Cüzdan &lt;b&gt;şifrelenmiştir&lt;/b&gt; ve şu anda &lt;b&gt;kilitlidir&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bonkcoin can no longer continue safely and will quit.</source>
-        <translation>Ölümcül bir hata oluştu. Bonkcoin yazılımı artık güvenli bir şekilde çalışmaya devam edemediği için kapatılacaktır.</translation>
+        <source>A fatal error occurred. Boncoin can no longer continue safely and will quit.</source>
+        <translation>Ölümcül bir hata oluştu. Boncoin yazılımı artık güvenli bir şekilde çalışmaya devam edemediği için kapatılacaktır.</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
@@ -605,7 +605,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import a Bonkcoin private key</source>
+        <source>Import a Boncoin private key</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -617,7 +617,7 @@
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Bonkcoin Seçimi</translation>
+        <translation>Boncoin Seçimi</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -807,8 +807,8 @@
         <translation>Gönderi adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Bonkcoin address.</source>
-        <translation>Girilen &quot;%1&quot; adresi geçerli bir Bonkcoin adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Boncoin address.</source>
+        <translation>Girilen &quot;%1&quot; adresi geçerli bir Boncoin adresi değildir.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -979,8 +979,8 @@
         <translation>Bu programın ilk kez başlatılmasından dolayı %1 yazılımının verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bonkcoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1, Bonkcoin blok zincirinin bir kopyasını indirecek ve saklayacaktır. Bu klasörde en az %2 GB veri saklanacak ve bu zamanla artacaktır. Cüzdan da bu klasörde saklanacaktır.</translation>
+        <source>%1 will download and store a copy of the Boncoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1, Boncoin blok zincirinin bir kopyasını indirecek ve saklayacaktır. Bu klasörde en az %2 GB veri saklanacak ve bu zamanla artacaktır. Cüzdan da bu klasörde saklanacaktır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1022,12 +1022,12 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bonkcoin network, as detailed below.</source>
-        <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız bonkcoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the boncoin network, as detailed below.</source>
+        <translation>Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız boncoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
     </message>
     <message>
-        <source>Attempting to spend bonkcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Henüz görüntülenmeyen işlemlerden etkilenen bonkcoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
+        <source>Attempting to spend boncoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Henüz görüntülenmeyen işlemlerden etkilenen boncoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1184,16 +1184,16 @@
         <translation>Doğrulanmamış para üstünü &amp;harca</translation>
     </message>
     <message>
-        <source>Automatically open the Bonkcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönlendiricide Bonkcoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+        <source>Automatically open the Boncoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Boncoin istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portları &amp;UPnP kullanarak haritala</translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a SOCKS5 proxy.</source>
-        <translation>Bonkcoin ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+        <source>Connect to the Boncoin network through a SOCKS5 proxy.</source>
+        <translation>Boncoin ağına bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1232,8 +1232,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Bonkcoin ağına gizli Tor servisleri için ayrı bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
+        <source>Connect to the Boncoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Boncoin ağına gizli Tor servisleri için ayrı bir SOCKS5 vekil sunucusu aracılığıyla bağlan.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1281,7 +1281,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Bonkcoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Boncoin gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1347,8 +1347,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bonkcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Bonkcoin ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Boncoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilgiler güncel olmayabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak Boncoin ağı ile senkronize olur ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1435,7 +1435,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Services that claim to double your bonkcoins are always ponzi schemes</source>
+        <source>Services that claim to double your boncoins are always ponzi schemes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1459,7 +1459,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Bonkcoin Core repository on GitHub</source>
+        <source>To see ongoing development and contribute, check out the Boncoin Core repository on GitHub</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1631,7 +1631,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation type="unfinished">Bonkcoin gönderimini onaylayın</translation>
+        <translation type="unfinished">Boncoin gönderimini onaylayın</translation>
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
@@ -1645,8 +1645,8 @@ p, li { white-space: pre-wrap; }
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start bonkcoin: click-to-pay handler</source>
-        <translation>Bonkcoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start boncoin: click-to-pay handler</source>
+        <translation>Boncoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1661,8 +1661,8 @@ p, li { white-space: pre-wrap; }
         <translation>%1 ödeme adresi geçersizdir</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bonkcoin address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Bonkcoin adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Boncoin address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamıyor! Bunun nedeni geçersiz bir Boncoin adresi veya hatalı biçimlendirilmiş URI değişkenleri olabilir.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1794,8 +1794,8 @@ p, li { white-space: pre-wrap; }
         <translation>Tutar</translation>
     </message>
     <message>
-        <source>Enter a Bonkcoin address (e.g. %1)</source>
-        <translation>Bir Bonkcoin adresi giriniz (mesela %1)</translation>
+        <source>Enter a Boncoin address (e.g. %1)</source>
+        <translation>Bir Boncoin adresi giriniz (mesela %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2172,7 +2172,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
-        <translation>UYARI: Bonkcoin dolandırıcılarının çok fazla etkin olduğu zamanlarda, dolandırıcılar bazı kullanıcılara buraya komutlar yazmalarını söylerek onların cüzdanlarındaki bonkcoinleri çalmışlardır. Bir komutun sonuçlarını tam olarak anlamadan bu konsolu kullanmayın.</translation>
+        <translation>UYARI: Boncoin dolandırıcılarının çok fazla etkin olduğu zamanlarda, dolandırıcılar bazı kullanıcılara buraya komutlar yazmalarını söylerek onların cüzdanlarındaki boncoinleri çalmışlardır. Bir komutun sonuçlarını tam olarak anlamadan bu konsolu kullanmayın.</translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -2282,8 +2282,8 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Hâlihazırda bulunan bir alım adresini kullan (önerilmez)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bonkcoin network.</source>
-        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Bonkcoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Boncoin network.</source>
+        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir ileti. Not: Bu ileti ödeme ile birlikte Boncoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2436,7 +2436,7 @@ p, li { white-space: pre-wrap; }
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Bonkcoin yolla</translation>
+        <translation>Boncoin yolla</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2511,8 +2511,8 @@ p, li { white-space: pre-wrap; }
         <translation>toplam asgari</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bonkcoin transactions than the network can process.</source>
-        <translation>Gerekli olan en az ücreti ödemek, bloklarda boşluktan daha az işlem hacmi olduğu sürece bir sorun çıkarmaz. Fakat ağın işleyecebileceğinden daha çok bonkcoin işlemi talebi olduğunda bunun asla doğrulanmayan bir işlem olabileceğinin farkında olmalısınız.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for boncoin transactions than the network can process.</source>
+        <translation>Gerekli olan en az ücreti ödemek, bloklarda boşluktan daha az işlem hacmi olduğu sürece bir sorun çıkarmaz. Fakat ağın işleyecebileceğinden daha çok boncoin işlemi talebi olduğunda bunun asla doğrulanmayan bir işlem olabileceğinin farkında olmalısınız.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2608,7 +2608,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bonkcoin gönderimini onaylayın</translation>
+        <translation>Boncoin gönderimini onaylayın</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2651,8 +2651,8 @@ p, li { white-space: pre-wrap; }
         <translation>Sadece asgari ücret olan %1 tutarını öde</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bonkcoin address</source>
-        <translation>Uyarı: geçersiz Bonkcoin adresi</translation>
+        <source>Warning: Invalid Boncoin address</source>
+        <translation>Uyarı: geçersiz Boncoin adresi</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2718,8 +2718,8 @@ p, li { white-space: pre-wrap; }
         <translation>Bu, normal bir ödemedir.</translation>
     </message>
     <message>
-        <source>The Bonkcoin address to send the payment to</source>
-        <translation>Ödemenin yollanacağı Bonkcoin adresi</translation>
+        <source>The Boncoin address to send the payment to</source>
+        <translation>Ödemenin yollanacağı Boncoin adresi</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2738,8 +2738,8 @@ p, li { white-space: pre-wrap; }
         <translation>Bu ögeyi kaldır</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bonkcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az bonkcoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less boncoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az boncoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2762,8 +2762,8 @@ p, li { white-space: pre-wrap; }
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the bonkcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bonkcoin network.</source>
-        <translation>Referans için bonkcoin: URI&apos;siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Bonkcoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the boncoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Boncoin network.</source>
+        <translation>Referans için boncoin: URI&apos;siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Boncoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2807,12 +2807,12 @@ p, li { white-space: pre-wrap; }
         <translation>İleti &amp;imzala</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bonkcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Adreslerinize yollanan bonkcoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive boncoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Adreslerinize yollanan boncoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
-        <source>The Bonkcoin address to sign the message with</source>
-        <translation>İletinin imzalanmasında kullanılacak Bonkcoin adresi</translation>
+        <source>The Boncoin address to sign the message with</source>
+        <translation>İletinin imzalanmasında kullanılacak Boncoin adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2843,8 +2843,8 @@ p, li { white-space: pre-wrap; }
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bonkcoin address</source>
-        <translation>Bu Bonkcoin adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
+        <source>Sign the message to prove you own this Boncoin address</source>
+        <translation>Bu Boncoin adresinin sizin olduğunu ispatlamak için iletiyi imzalayın</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2867,12 +2867,12 @@ p, li { white-space: pre-wrap; }
         <translation>Alıcının adresini, iletiyi (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıya giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya engel olmak için imzadan, imzalı iletinin içeriğini aşan bir anlam çıkarmamaya dikkat ediniz. Bunun sadece imzalayan tarafın adres ile alım yapabildiğini ispatladığını ve herhangi bir işlemin gönderi tarafını kanıtlayamayacağını unutmayınız!</translation>
     </message>
     <message>
-        <source>The Bonkcoin address the message was signed with</source>
-        <translation>İletinin imzalanmasında kullanılan Bonkcoin adresi</translation>
+        <source>The Boncoin address the message was signed with</source>
+        <translation>İletinin imzalanmasında kullanılan Boncoin adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bonkcoin address</source>
-        <translation>Belirtilen Bonkcoin adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Boncoin address</source>
+        <translation>Belirtilen Boncoin adresi ile imzalandığını doğrulamak için iletiyi kontrol et</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3142,7 +3142,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan bonkcoin&apos;lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan boncoin&apos;lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu &quot;kabul edilmedi&quot; olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3470,7 +3470,7 @@ p, li { white-space: pre-wrap; }
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Bonkcoini Gönder</translation>
+        <translation>Boncoini Gönder</translation>
     </message>
 </context>
 <context>
@@ -3579,8 +3579,8 @@ p, li { white-space: pre-wrap; }
         <translation>HTTP sunucusu başlatılamadı. Ayrıntılar için debug.log dosyasına bakınız.</translation>
     </message>
     <message>
-        <source>Bonkcoin Core</source>
-        <translation>Bonkcoin Çekirdeği</translation>
+        <source>Boncoin Core</source>
+        <translation>Boncoin Çekirdeği</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3660,7 +3660,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - bonkcoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - boncoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
@@ -4100,7 +4100,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation>İşlemdeki bonkcoin tutarı ücreti ödemek için çok düşük</translation>
+        <translation>İşlemdeki boncoin tutarı ücreti ödemek için çok düşük</translation>
     </message>
     <message>
         <source>This is experimental software.</source>
@@ -4427,7 +4427,7 @@ p, li { white-space: pre-wrap; }
         <translation>Hata</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Bonkcoin Core</source>
+        <source>Bitcoin Core and Boncoin Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
