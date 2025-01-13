@@ -9,7 +9,7 @@ boncoind on archlinux:
 
 ```sh
 pacman -S git base-devel boost libevent python db
-git clone https://github.com/Boncoin/boncoin.git
+git clone https://github.com/Bonkcoin/Bonkcoin-core.git
 cd boncoin/
 ./autogen.sh
 ./configure --without-gui --without-miniupnpc

@@ -4,8 +4,8 @@ Boncoin Core is open source software, and we would welcome contributions
 which improve the state of the software. For those wanting to discuss changes,
 or look for work that needs doing, please see:
 
-* [Help requests](https://github.com/Boncoin/Boncoin-core/labels/help%20wanted)
-* [Projects](https://github.com/Boncoin/Boncoin-core/projects)
+* [Help requests](https://github.com/Bonkcoin/Bonkcoin-core/labels/help%20wanted)
+* [Projects](https://github.com/Bonkcoin/Bonkcoin-core/projects)
 * [Boncoindev on reddit](https://www.reddit.com/r/boncoindev/)
 
 ## Branch Strategy

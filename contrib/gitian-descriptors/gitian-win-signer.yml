@@ -8,7 +8,7 @@ packages:
 - "libssl-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/Boncoin/boncoin-detached-sigs.git"
+- "url": "https://github.com/Bonkcoin/Bonkcoin-core-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode_1.7.1.orig.tar.gz"

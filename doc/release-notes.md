@@ -5,7 +5,7 @@ This is a new minor release which includes improvements from recent Dogecoin rel
 #### Technical Changes
 
 * Merged several upstream improvements from Dogecoin `1.14.7`, `1.14.8`, and `1.14.9`
-* Add new DNS seeder for mainnet and testnet (seeds.bonblocks.com and seeds-testnet.bonblocks.com)
+* Add new DNS seeder for mainnet and testnet (seeds.bonkblocks.com and seeds-testnet.bonkblocks.com)
 * Update `chainparamsseeds.h` with more nodes to make the network more resilient
 * Various security fixes
 

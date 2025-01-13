@@ -5,7 +5,7 @@ of the latest changes on NixOS.
 
 Clone and enter the repo:
 
-    $ git clone https://github.com/Boncoin/boncoin
+    $ git clone https://github.com/Bonkcoin/Bonkcoin-core
     $ cd boncoin
 
 Enter the `nix-shell` environment with all the Boncoin dependencies present:

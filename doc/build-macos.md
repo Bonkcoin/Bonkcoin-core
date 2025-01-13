@@ -5,7 +5,7 @@ Tested on MacOs Ventura and Sonoma on Intel (x86_64) and Apple Silicon (arm64) m
 ### Clone boncoin locally, or check it out, etc. ###
 
 ```sh
-git clone https://github.com/Boncoin/boncoin.git
+git clone https://github.com/Bonkcoin/Bonkcoin-core.git
 ```
 
 ### Set up OSX basic build dependencies. ##

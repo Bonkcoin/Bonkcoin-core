@@ -80,14 +80,14 @@ parts:
   boncoin:
     plugin: nil
     override-build: |
-      echo "This script is viewable at https://github.com/Boncoin/boncoin/blob/master/contrib/snap/snapcraft.yaml"
+      echo "This script is viewable at https://github.com/Bonkcoin/Bonkcoin-core/blob/master/contrib/snap/snapcraft.yaml"
       echo "Downloading files..."
       if [ "$CRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but boncoin designates it as i686
         BUILD_ARCH_TRIPLET=i686-pc-linux-gnu
       else
         BUILD_ARCH_TRIPLET=$CRAFT_ARCH_TRIPLET
       fi
-      wget https://github.com/Boncoin/boncoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
+      wget https://github.com/Bonkcoin/Bonkcoin-core/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
       wget https://github.com/Boncoin/gitian.sigs/archive/refs/heads/master.tar.gz
       tar -xvf master.tar.gz
       echo "Verifying secure hash matches signed values..."
