@@ -1,10 +1,10 @@
 ## Frequently Asked Questions ❓
 
-### How much Bonkcoin can exist?
+### How much Boncoin can exist?
 
-In den ersten 600.000 Blöcken (ungefähr 1 Jahr und 2 Monate) werden 100 Milliarden Bonkcoin abgebaut. Danach wird jeder Block 10.000 Bonkcoin auszahlen. 
-Bei einem Block pro Minute entspricht dies zusätzlichen ~5,25 Milliarden Bonkcoin pro Jahr. 
-Da eine feste Menge an neuen Münzen abgebaut wird, steigt Bonkcoin jedes Jahr weniger an.
+In den ersten 600.000 Blöcken (ungefähr 1 Jahr und 2 Monate) werden 100 Milliarden Boncoin abgebaut. Danach wird jeder Block 10.000 Boncoin auszahlen. 
+Bei einem Block pro Minute entspricht dies zusätzlichen ~5,25 Milliarden Boncoin pro Jahr. 
+Da eine feste Menge an neuen Münzen abgebaut wird, steigt Boncoin jedes Jahr weniger an.
 
 Inflation = ~5.25 Billion/TotalSupply
 
@@ -12,8 +12,8 @@ Da sich das Gesamtangebot jedes Jahr erhöht, nimmt die Inflation ab.
 
 ### Mining-Informationen ⛏
 
-Bonkcoin verwendet eine vereinfachte Variante der scrypt-Schlüsselableitungsfunktion als seinen Arbeitsnachweis mit einer Zielzeit von einer Minute pro Block und Schwierigkeitsanpassung nach jedem Block. 
-Die Blockbelohnungen sind festgelegt und halbieren sich alle 100.000 Blöcke. Ab dem 600.000. Block wird eine dauerhafte Belohnung von 10.000 Bonkcoin pro Block ausgegeben.
+Boncoin verwendet eine vereinfachte Variante der scrypt-Schlüsselableitungsfunktion als seinen Arbeitsnachweis mit einer Zielzeit von einer Minute pro Block und Schwierigkeitsanpassung nach jedem Block. 
+Die Blockbelohnungen sind festgelegt und halbieren sich alle 100.000 Blöcke. Ab dem 600.000. Block wird eine dauerhafte Belohnung von 10.000 Boncoin pro Block ausgegeben.
 
 Begründung von Dogecoin:
 
@@ -24,7 +24,7 @@ Dies wurde ab Block 145.000 geändert, um zu verhindern, dass große Pools das S
 
 **Der aktuelle Blockbelohnungsplan:**
 
-| Block                | Belohnung in Bonkcoin |
+| Block                | Belohnung in Boncoin |
 | :------------------- | --------------------: |
 | 1–99,999             |               500,000 |
 | 100,000–199,999      |               250,000 |

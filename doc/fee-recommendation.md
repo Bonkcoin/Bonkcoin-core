@@ -1,17 +1,17 @@
-Bonkcoin Fee Recommendation
+Boncoin Fee Recommendation
 ----------------------------
 
 _last updated for 1.0.0_
 
-The Bonkcoin chain has a relatively low block interval, 1 megabyte blockspace
+The Boncoin chain has a relatively low block interval, 1 megabyte blockspace
 and aims to provide a cheap means for people to transact. Therefore, the biggest
-threat to the Bonkcoin chain as a whole is spam. Bonkcoin uses a transaction fee
+threat to the Boncoin chain as a whole is spam. Boncoin uses a transaction fee
 and dust disincentive, to combat on-chain spam.
 
-Bonkcoin Core implements a number of defaults into the software that reflect the
+Boncoin Core implements a number of defaults into the software that reflect the
 developers' recommendations towards fees and dust limits, that at the moment of
 release represent the developers best estimate of how these limits should be
-parametrized. The recommended defaults, as implemented in the Bonkcoin Core
+parametrized. The recommended defaults, as implemented in the Boncoin Core
 wallet, are:
 
 - **0.01 BONC per kilobyte** transaction fee

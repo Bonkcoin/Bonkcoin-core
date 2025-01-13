@@ -99,12 +99,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses Bonkcoin pour envoyer des paiements. Vérifiez toujours le montant et l&apos;adresse du destinataire avant d&apos;envoyer des pièces.</translation>
+        <source>These are your Boncoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses Boncoin pour envoyer des paiements. Vérifiez toujours le montant et l&apos;adresse du destinataire avant d&apos;envoyer des pièces.</translation>
     </message>
     <message>
-        <source>These are your Bonkcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses Bonkcoin pour recevoir des paiements. Il est recommandé d&apos;utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your Boncoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses Boncoin pour recevoir des paiements. Il est recommandé d&apos;utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -205,8 +205,8 @@
         <translation>Confirmer le chiffrement du porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONKCOINS&lt;/b&gt;!</source>
-        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS BONKCOINS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BONCOINS&lt;/b&gt;!</source>
+        <translation>Avertissement : si vous chiffrez votre porte-monnaie et perdez votre phrase de passe, vous &lt;b&gt;PERDREZ TOUS VOS BONCOINS&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -217,8 +217,8 @@
         <translation>Le porte-monnaie est chiffré</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bonkcoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 va maintenant se fermer pour terminer le processus de chiffrement. Souvenez-vous que le chiffrement de votre porte-monnaie ne peut pas protéger entièrement vos bonkcoins contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your boncoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 va maintenant se fermer pour terminer le processus de chiffrement. Souvenez-vous que le chiffrement de votre porte-monnaie ne peut pas protéger entièrement vos boncoins contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -367,8 +367,8 @@
         <translation>Réindexation des blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Bonkcoin address</source>
-        <translation>Envoyer des pièces à une adresse Bonkcoin</translation>
+        <source>Send coins to a Boncoin address</source>
+        <translation>Envoyer des pièces à une adresse Boncoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -391,8 +391,8 @@
         <translation>&amp;Vérifier un message...</translation>
     </message>
     <message>
-        <source>Bonkcoin</source>
-        <translation>Bonkcoin</translation>
+        <source>Boncoin</source>
+        <translation>Boncoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -419,12 +419,12 @@
         <translation>Chiffrer les clés privées qui appartiennent à votre porte-monnaie</translation>
     </message>
     <message>
-        <source>Sign messages with your Bonkcoin addresses to prove you own them</source>
-        <translation>Signer les messages avec vos adresses Bonkcoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Boncoin addresses to prove you own them</source>
+        <translation>Signer les messages avec vos adresses Boncoin pour prouver que vous les détenez</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bonkcoin addresses</source>
-        <translation>Vérifier les messages pour s&apos;assurer qu&apos;ils ont été signés avec les adresses Bonkcoin spécifiées</translation>
+        <source>Verify messages to ensure they were signed with specified Boncoin addresses</source>
+        <translation>Vérifier les messages pour s&apos;assurer qu&apos;ils ont été signés avec les adresses Boncoin spécifiées</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -443,8 +443,8 @@
         <translation>Barre d&apos;outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bonkcoin: URIs)</source>
-        <translation>Demander des paiements (génère des codes QR et des URI bonkcoin:)</translation>
+        <source>Request payments (generates QR codes and boncoin: URIs)</source>
+        <translation>Demander des paiements (génère des codes QR et des URI boncoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -455,18 +455,18 @@
         <translation>Afficher la liste d&apos;adresses de réception et d&apos;étiquettes utilisées</translation>
     </message>
     <message>
-        <source>Open a bonkcoin: URI or payment request</source>
-        <translation>Ouvrir une URI bonkcoin: ou une demande de paiement</translation>
+        <source>Open a boncoin: URI or payment request</source>
+        <translation>Ouvrir une URI boncoin: ou une demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Options de ligne de &amp;commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bonkcoin network</source>
+        <source>%n active connection(s) to Boncoin network</source>
         <translation>
-            <numerusform>%n connexion active avec le réseau Bonkcoin</numerusform>
-            <numerusform>%n connexions actives avec le réseau Bonkcoin</numerusform>
+            <numerusform>%n connexion active avec le réseau Boncoin</numerusform>
+            <numerusform>%n connexions actives avec le réseau Boncoin</numerusform>
         </translation>
     </message>
     <message>
@@ -513,8 +513,8 @@
         <translation>À jour</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bonkcoin command-line options</source>
-        <translation>Afficher le message d&apos;aide de %1 pour obtenir la liste des options de ligne de commande Bonkcoin possibles.</translation>
+        <source>Show the %1 help message to get a list with possible Boncoin command-line options</source>
+        <translation>Afficher le message d&apos;aide de %1 pour obtenir la liste des options de ligne de commande Boncoin possibles.</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -583,8 +583,8 @@
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Bonkcoin can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale est survenue. Bonkcoin ne peut plus continuer en toute sécurité et va s&apos;arrêter.</translation>
+        <source>A fatal error occurred. Boncoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale est survenue. Boncoin ne peut plus continuer en toute sécurité et va s&apos;arrêter.</translation>
     </message>
     <message>
         <source>&amp;Print paper wallets</source>
@@ -607,8 +607,8 @@
         <translation>Importer une clé privée...</translation>
     </message>
     <message>
-        <source>Import a Bonkcoin private key</source>
-        <translation>Importer une clé privée Bonkcoin</translation>
+        <source>Import a Boncoin private key</source>
+        <translation>Importer une clé privée Boncoin</translation>
     </message>
     <message>
         <source>Runaway exception</source>
@@ -820,8 +820,8 @@
         <translation>Modifier l&apos;adresse d&apos;envoi</translation>
     </message>
     <message>
-        <source>The entered address &quot;%1&quot; is not a valid Bonkcoin address.</source>
-        <translation>L&apos;adresse saisie «&#xa0;%1&#xa0;» n&apos;est pas une adresse Bonkcoin valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Boncoin address.</source>
+        <translation>L&apos;adresse saisie «&#xa0;%1&#xa0;» n&apos;est pas une adresse Boncoin valide.</translation>
     </message>
     <message>
         <source>The entered address &quot;%1&quot; is already in the address book.</source>
@@ -996,8 +996,8 @@
         <translation>Puisque c&apos;est la première fois que le logiciel est lancé, vous pouvez choisir où %1 stockera ses données.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bonkcoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 téléchargera et stockera une copie de la chaîne de blocs de Bonkcoin. Au moins %2 Go de données seront stockés dans ce répertoire et sa taille augmentera avec le temps. Le porte-monnaie sera également stocké dans ce répertoire.</translation>
+        <source>%1 will download and store a copy of the Boncoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 téléchargera et stockera une copie de la chaîne de blocs de Boncoin. Au moins %2 Go de données seront stockés dans ce répertoire et sa taille augmentera avec le temps. Le porte-monnaie sera également stocké dans ce répertoire.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1041,12 +1041,12 @@
         <translation>Formulaire</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bonkcoin network, as detailed below.</source>
-        <translation>Les transactions récentes ne sont peut-être pas encore visibles, et par conséquent, le solde de votre porte-monnaie est peut-être erroné. Cette information sera juste une fois que votre porte-monnaie aura fini de se synchroniser avec le réseau Bonkcoin, comme décrit ci-dessous. </translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the boncoin network, as detailed below.</source>
+        <translation>Les transactions récentes ne sont peut-être pas encore visibles, et par conséquent, le solde de votre porte-monnaie est peut-être erroné. Cette information sera juste une fois que votre porte-monnaie aura fini de se synchroniser avec le réseau Boncoin, comme décrit ci-dessous. </translation>
     </message>
     <message>
-        <source>Attempting to spend bonkcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Toute tentative de dépense de bonkcoins affectés par des transactions qui ne sont pas encore affichées ne sera pas acceptée par le réseau.</translation>
+        <source>Attempting to spend boncoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Toute tentative de dépense de boncoins affectés par des transactions qui ne sont pas encore affichées ne sera pas acceptée par le réseau.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1203,16 +1203,16 @@
         <translation>&amp;Dépenser la monnaie non confirmée</translation>
     </message>
     <message>
-        <source>Automatically open the Bonkcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client Bonkcoin sur le routeur. Cela ne fonctionne que si votre routeur prend en charge l&apos;UPnP et si la fonction est activée.</translation>
+        <source>Automatically open the Boncoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client Boncoin sur le routeur. Cela ne fonctionne que si votre routeur prend en charge l&apos;UPnP et si la fonction est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapper le port avec l&apos;&amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a SOCKS5 proxy.</source>
-        <translation>Se connecter au réseau Bonkcoin par un mandataire SOCKS5.</translation>
+        <source>Connect to the Boncoin network through a SOCKS5 proxy.</source>
+        <translation>Se connecter au réseau Boncoin par un mandataire SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1251,8 +1251,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bonkcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Se connecter au réseau Bonkcoin au travers d&apos;un mandataire SOCKS5 séparé pour les services cachés de Tor.</translation>
+        <source>Connect to the Boncoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Se connecter au réseau Boncoin au travers d&apos;un mandataire SOCKS5 séparé pour les services cachés de Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1366,8 +1366,8 @@
         <translation>Formulaire</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bonkcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées peuvent être obsolètes. Votre porte-monnaie est automatiquement synchronisé avec le réseau Bonkcoin lorsque la connexion s&apos;établit, or ce processus n&apos;est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Boncoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées peuvent être obsolètes. Votre porte-monnaie est automatiquement synchronisé avec le réseau Boncoin lorsque la connexion s&apos;établit, or ce processus n&apos;est pas encore terminé.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1474,12 +1474,12 @@
         <translation type="vanished">Ceux qui possèdent les clés privées possèdent les pièces.</translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, checkout Bonkcoin repository on GitHub!</source>
-        <translation type="vanished">Pour voir le développement en cours et contribuer, consultez le dépôt Bonkcoin sur GitHub !</translation>
+        <source>To see ongoing development and contribute, checkout Boncoin repository on GitHub!</source>
+        <translation type="vanished">Pour voir le développement en cours et contribuer, consultez le dépôt Boncoin sur GitHub !</translation>
     </message>
     <message>
-        <source>Services that claim to double your bonkcoins are always ponzi schemes</source>
-        <translation>Les services qui prétendent doubler vos bonkcoins sont toujours des systèmes de ponzi.</translation>
+        <source>Services that claim to double your boncoins are always ponzi schemes</source>
+        <translation>Les services qui prétendent doubler vos boncoins sont toujours des systèmes de ponzi.</translation>
     </message>
     <message>
         <source>Never share your wallet.dat file with anyone</source>
@@ -1502,8 +1502,8 @@
         <translation>Celui qui possède les clés privées, possède les pièces</translation>
     </message>
     <message>
-        <source>To see ongoing development and contribute, check out the Bonkcoin Core repository on GitHub</source>
-        <translation>Pour suivre le développement en cours et contribuer, consultez le dépôt Bonkcoin Core sur GitHub.</translation>
+        <source>To see ongoing development and contribute, check out the Boncoin Core repository on GitHub</source>
+        <translation>Pour suivre le développement en cours et contribuer, consultez le dépôt Boncoin Core sur GitHub.</translation>
     </message>
 </context>
 <context>
@@ -1692,8 +1692,8 @@ p, li { white-space: pre-wrap; }
         <translation>Erreur de demande de paiement</translation>
     </message>
     <message>
-        <source>Cannot start bonkcoin: click-to-pay handler</source>
-        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer bonkcoin:</translation>
+        <source>Cannot start boncoin: click-to-pay handler</source>
+        <translation>Impossible de démarrer le gestionnaire de cliquer-pour-payer boncoin:</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1708,8 +1708,8 @@ p, li { white-space: pre-wrap; }
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bonkcoin address or malformed URI parameters.</source>
-        <translation>L&apos;URI ne peut pas être analysée&#xa0;! Cela peut être causé par une adresse Bonkcoin invalide ou par des paramètres d&apos;URI mal formés.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Boncoin address or malformed URI parameters.</source>
+        <translation>L&apos;URI ne peut pas être analysée&#xa0;! Cela peut être causé par une adresse Boncoin invalide ou par des paramètres d&apos;URI mal formés.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1845,8 +1845,8 @@ p, li { white-space: pre-wrap; }
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Bonkcoin address (e.g. %1)</source>
-        <translation>Saisir une adresse Bonkcoin (p. ex. %1)</translation>
+        <source>Enter a Boncoin address (e.g. %1)</source>
+        <translation>Saisir une adresse Boncoin (p. ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2347,8 +2347,8 @@ p, li { white-space: pre-wrap; }
         <translation>Ré&amp;utiliser une adresse de réception existante (non recommandé)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bonkcoin network.</source>
-        <translation>Un message facultatif à joindre à la demande de paiement et qui sera affiché à l&apos;ouverture de celle-ci. Note : le message ne sera pas envoyé avec le paiement par le réseau Bonkcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Boncoin network.</source>
+        <translation>Un message facultatif à joindre à la demande de paiement et qui sera affiché à l&apos;ouverture de celle-ci. Note : le message ne sera pas envoyé avec le paiement par le réseau Boncoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2576,7 +2576,7 @@ p, li { white-space: pre-wrap; }
         <translation>total au moins</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bonkcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for boncoin transactions than the network can process.</source>
         <translation>Il est correct de payer les frais minimum tant que le volume transactionnel est inférieur à l&apos;espace dans les blocs. Mais soyez conscient que cela pourrait résulter en une transaction n&apos;étant jamais confirmée une fois qu&apos;il y aura plus de transactions que le réseau ne pourra en traiter.</translation>
     </message>
     <message>
@@ -2716,8 +2716,8 @@ p, li { white-space: pre-wrap; }
         <translation>Payer seulement les frais exigés de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bonkcoin address</source>
-        <translation>Avertissement : adresse Bonkcoin invalide</translation>
+        <source>Warning: Invalid Boncoin address</source>
+        <translation>Avertissement : adresse Boncoin invalide</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2787,8 +2787,8 @@ p, li { white-space: pre-wrap; }
         <translation>Ceci est un paiement normal.</translation>
     </message>
     <message>
-        <source>The Bonkcoin address to send the payment to</source>
-        <translation>L&apos;adresse Bonkcoin à laquelle envoyer le paiement</translation>
+        <source>The Boncoin address to send the payment to</source>
+        <translation>L&apos;adresse Boncoin à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2807,8 +2807,8 @@ p, li { white-space: pre-wrap; }
         <translation>Retirer cette entrée</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bonkcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Les frais seront déduits du montant envoyé. Le destinataire recevra moins de bonkcoins que le montant saisi dans le champ de montant. Si plusieurs destinataires sont sélectionnés, les frais seront partagés également..</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less boncoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Les frais seront déduits du montant envoyé. Le destinataire recevra moins de boncoins que le montant saisi dans le champ de montant. Si plusieurs destinataires sont sélectionnés, les frais seront partagés également..</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2831,8 +2831,8 @@ p, li { white-space: pre-wrap; }
         <translation>Saisir une étiquette pour cette adresse afin de l&apos;ajouter à la liste d&apos;adresses utilisées</translation>
     </message>
     <message>
-        <source>A message that was attached to the bonkcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bonkcoin network.</source>
-        <translation>Un message qui était joint à l&apos;URI bonkcoin: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau Bonkcoin.</translation>
+        <source>A message that was attached to the boncoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Boncoin network.</source>
+        <translation>Un message qui était joint à l&apos;URI boncoin: et qui sera stocké avec la transaction pour référence. Note : ce message ne sera pas envoyé par le réseau Boncoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2876,12 +2876,12 @@ p, li { white-space: pre-wrap; }
         <translation>&amp;Signer un message</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bonkcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Vous pouvez signer des messages ou des accords avec vos adresses pour prouver que vous pouvez recevoir des bonkcoins à ces dernières. Faites attention de ne rien signer de vague ou au hasard, car des attaques d&apos;hameçonnage pourraient essayer de vous faire signer avec votre identité afin de l&apos;usurper. Ne signez que des déclarations entièrement détaillées et avec lesquelles vous êtes d&apos;accord.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive boncoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Vous pouvez signer des messages ou des accords avec vos adresses pour prouver que vous pouvez recevoir des boncoins à ces dernières. Faites attention de ne rien signer de vague ou au hasard, car des attaques d&apos;hameçonnage pourraient essayer de vous faire signer avec votre identité afin de l&apos;usurper. Ne signez que des déclarations entièrement détaillées et avec lesquelles vous êtes d&apos;accord.</translation>
     </message>
     <message>
-        <source>The Bonkcoin address to sign the message with</source>
-        <translation>L&apos;adresse Bonkcoin avec laquelle signer le message</translation>
+        <source>The Boncoin address to sign the message with</source>
+        <translation>L&apos;adresse Boncoin avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2912,8 +2912,8 @@ p, li { white-space: pre-wrap; }
         <translation>Copier la signature actuelle dans le presse-papiers</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bonkcoin address</source>
-        <translation>Signer le message afin de prouver que vous détenez cette adresse Bonkcoin</translation>
+        <source>Sign the message to prove you own this Boncoin address</source>
+        <translation>Signer le message afin de prouver que vous détenez cette adresse Boncoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2936,12 +2936,12 @@ p, li { white-space: pre-wrap; }
         <translation>Saisir ci-dessous l&apos;adresse du destinataire, le message (s&apos;assurer de copier fidèlement les retours à la ligne, les espaces, les tabulations, etc.) et la signature pour vérifier le message. Faire attention à ne pas déduire davantage de la signature que ce qui est contenu dans le message signé même, pour éviter d&apos;être trompé par une attaque d&apos;homme du milieu. Prendre en compte que cela ne fait que prouver que le signataire reçoit l&apos;adresse et ne peut pas prouver la provenance d&apos;une transaction !</translation>
     </message>
     <message>
-        <source>The Bonkcoin address the message was signed with</source>
-        <translation>L&apos;adresse Bonkcoin avec laquelle le message a été signé</translation>
+        <source>The Boncoin address the message was signed with</source>
+        <translation>L&apos;adresse Boncoin avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bonkcoin address</source>
-        <translation>Vérifier le message pour s&apos;assurer qu&apos;il a été signé avec l&apos;adresse Bonkcoin spécifiée</translation>
+        <source>Verify the message to ensure it was signed with the specified Boncoin address</source>
+        <translation>Vérifier le message pour s&apos;assurer qu&apos;il a été signé avec l&apos;adresse Boncoin spécifiée</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3652,8 +3652,8 @@ p, li { white-space: pre-wrap; }
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Bonkcoin Core</source>
-        <translation>Bonkcoin Core</translation>
+        <source>Boncoin Core</source>
+        <translation>Boncoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -4496,8 +4496,8 @@ p, li { white-space: pre-wrap; }
         <translation>Erreur</translation>
     </message>
     <message>
-        <source>Bitcoin Core and Bonkcoin Core</source>
-        <translation>Bitcoin Core et Bonkcoin Core</translation>
+        <source>Bitcoin Core and Boncoin Core</source>
+        <translation>Bitcoin Core et Boncoin Core</translation>
     </message>
     <message>
         <source>Amount under which a transaction output is considered dust, in %s (default: %s)</source>

@@ -186,7 +186,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 {
     // Note that by default, these tests run with size accounting enabled.
     const CChainParams& chainparams = Params(CBaseChainParams::MAIN);
-    // changed this to bonkcoin genesis pubkey script
+    // changed this to boncoin genesis pubkey script
     CScript scriptPubKey = CScript() << ParseHex("0436d04f40a76a1094ea10b14a513b62bfd0b47472dda1c25aa9cf8266e53f3c4353680146177f8a3b328ed2c6e02f2b8e051d9d5ffc61a4e6ccabd03409109a5a") << OP_CHECKSIG;
     std::unique_ptr<CBlockTemplate> pblocktemplate;
     CMutableTransaction tx,tx2;
@@ -520,7 +520,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     SetMockTime(0);
     mempool.clear();
 
-    // Bonkcoin: Package selection doesn't work that way because our fees are fundamentally
+    // Boncoin: Package selection doesn't work that way because our fees are fundamentally
     //           different. Need to rationalise in a later release.
     // TestPackageSelection(chainparams, scriptPubKey, txFirst);
 

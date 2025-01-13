@@ -1,33 +1,33 @@
-# /etc/conf.d/bonkcoind: config file for /etc/init.d/bonkcoind
+# /etc/conf.d/boncoind: config file for /etc/init.d/boncoind
 
 # Config file location
-#BONKCOIND_CONFIGFILE="/etc/bonkcoin/bonkcoin.conf"
+#BONCOIND_CONFIGFILE="/etc/boncoin/boncoin.conf"
 
-# What directory to write pidfile to?  (created and owned by $BONKCOIND_USER)
-#BONKCOIND_PIDDIR="/var/run/bonkcoind"
+# What directory to write pidfile to?  (created and owned by $BONCOIND_USER)
+#BONCOIND_PIDDIR="/var/run/boncoind"
 
 # What filename to give the pidfile
-#BONKCOIND_PIDFILE="${BONKCOIND_PIDDIR}/bonkcoind.pid"
+#BONCOIND_PIDFILE="${BONCOIND_PIDDIR}/boncoind.pid"
 
-# Where to write bonkcoind data (be mindful that the blockchain is large)
-#BONKCOIND_DATADIR="/var/lib/bonkcoind"
+# Where to write boncoind data (be mindful that the blockchain is large)
+#BONCOIND_DATADIR="/var/lib/boncoind"
 
-# User and group to own bonkcoind process
-#BONKCOIND_USER="bonkcoin"
-#BONKCOIND_GROUP="bonkcoin"
+# User and group to own boncoind process
+#BONCOIND_USER="boncoin"
+#BONCOIND_GROUP="boncoin"
 
-# Path to bonkcoind executable
-#BONKCOIND_BIN="/usr/bin/bonkcoind"
+# Path to boncoind executable
+#BONCOIND_BIN="/usr/bin/boncoind"
 
-# Nice value to run bonkcoind under
-#BONKCOIND_NICE=0
+# Nice value to run boncoind under
+#BONCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-BONKCOIND_OPTS="-disablewallet"
+BONCOIND_OPTS="-disablewallet"
 
-# The timeout in seconds OpenRC will wait for bonkcoind to terminate
+# The timeout in seconds OpenRC will wait for boncoind to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-BONKCOIND_SIGTERM_TIMEOUT=60
+BONCOIND_SIGTERM_TIMEOUT=60

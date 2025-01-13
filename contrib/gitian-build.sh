@@ -13,7 +13,7 @@ SIGN_DESCRIPTORS=('win-signer' 'osx-signer')
 export USE_DOCKER=0
 export USE_LXC=0
 
-# BONC TODO Change these urls to bonkscoin.io and add a depends subdomain which will do what this does
+# BONC TODO Change these urls to bonscoin.io and add a depends subdomain which will do what this does
 # Dependencies
 ossPatchUrl="https://depends.dogecoincore.org/osslsigncode-Backports-to-1.7.1.patch"
 ossPatchHash="a8c4e9cafba922f89de0df1f2152e7be286aba73f78505169bc351a7938dd911"
@@ -37,7 +37,7 @@ test=false
 # Other Basic variables
 SIGNER=
 VERSION=
-url=https://github.com/Bonkcoin/Bonkcoin-core
+url=https://github.com/Boncoin/Boncoin-core
 proc=2
 mem=2000
 scriptName=$(basename -- "$0")
@@ -47,7 +47,7 @@ outputDir=$(pwd)/gitian-output
 read -r -d '' usage <<-EOF
 Usage: $scriptName [options] version
 
-Standalone script to perform the gitian build of Bonkcoin Core. Perform
+Standalone script to perform the gitian build of Boncoin Core. Perform
 deterministic build for multiples Operating System, using Docker, LXC or
 KVM for virtualization. Sign binaries using PGP.
 
@@ -70,7 +70,7 @@ Options:
 -j proc             Number of processes to use. Default $proc
 -m n                Memory to allocate in MiB. Default $mem
 -c|--commit         Indicate that the version argument is for a commit or branch
--u|--url repo       Specify the URL of the repository. Default is https://github.com/Bonkcoin/bonkcoin
+-u|--url repo       Specify the URL of the repository. Default is https://github.com/Boncoin/boncoin
 --test              CI TEST. Uses Docker
 -h|--help           Print this help message
 EOF
@@ -201,7 +201,7 @@ function download_file () {
 }
 
 function move_build_files() {
-    find build/out -type f -exec mv '{}' $outputDir/bonkcoin-binaries/${VERSION}/ \;
+    find build/out -type f -exec mv '{}' $outputDir/boncoin-binaries/${VERSION}/ \;
 }
 
 function download_descriptor() {
@@ -258,8 +258,8 @@ fi
 ### Setup ###
 
 if [[ $setup == true ]]; then
-    git clone https://github.com/Bonkcoin/gitian.sigs.git
-    git clone https://github.com/Bonkcoin/bonkcoin-detached-sigs.git
+    git clone https://github.com/Boncoin/gitian.sigs.git
+    git clone https://github.com/Boncoin/boncoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
 
     pushd ./gitian-builder
@@ -311,21 +311,21 @@ popd
 
 if [[ $build == true ]]; then
     # Make output folder
-    mkdir -p $outputDir/bonkcoin-binaries/"$VERSION"
+    mkdir -p $outputDir/boncoin-binaries/"$VERSION"
 
     pushd ./gitian-builder || exit 1
 
-    # Clean bonkcoin git directory because of old caching
-    if [ -d inputs/bonkcoin/ ]; then
-        echo "Cleaning Bonkcoin directory..."
-        rm -rf inputs/bonkcoin/
+    # Clean boncoin git directory because of old caching
+    if [ -d inputs/boncoin/ ]; then
+        echo "Cleaning Boncoin directory..."
+        rm -rf inputs/boncoin/
     fi
 
     for descriptor in "${DESCRIPTORS[@]}"; do
         echo ""
         echo "Compiling ${VERSION} ${descriptor}"
         echo ""
-        ./bin/gbuild -j "$proc" -m "$mem" --commit bonkcoin="$COMMIT" --url bonkcoin="$url" ../gitian-descriptors/gitian-"$descriptor".yml  || exit 1
+        ./bin/gbuild -j "$proc" -m "$mem" --commit boncoin="$COMMIT" --url boncoin="$url" ../gitian-descriptors/gitian-"$descriptor".yml  || exit 1
 
         if [ -n "$SIGNER" ]; then
             ./bin/gsign --signer "$SIGNER" --release "$VERSION"-"$descriptor" \

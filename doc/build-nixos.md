@@ -5,10 +5,10 @@ of the latest changes on NixOS.
 
 Clone and enter the repo:
 
-    $ git clone https://github.com/Bonkcoin/bonkcoin
-    $ cd bonkcoin
+    $ git clone https://github.com/Boncoin/boncoin
+    $ cd boncoin
 
-Enter the `nix-shell` environment with all the Bonkcoin dependencies present:
+Enter the `nix-shell` environment with all the Boncoin dependencies present:
 
     $ nix-shell ./contrib/nixos/shell.nix
 
@@ -20,4 +20,4 @@ Run the build steps with flags necessary for NixOS:
 
 Start the GUI!
 
-    $ ./src/qt/bonkcoin-qt
+    $ ./src/qt/boncoin-qt

@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Bonkcoin</source>
-        <translation>Bonkcoin</translation>
+        <source>Boncoin</source>
+        <translation>Boncoin</translation>
     </message>
     <message>
         <source>Wallet</source>

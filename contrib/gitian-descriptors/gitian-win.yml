@@ -1,5 +1,5 @@
 ---
-name: "bonkcoin-win-1.1.0"
+name: "boncoin-win-1.1.0"
 enable_cache: true
 suites:
 - "focal"
@@ -25,8 +25,8 @@ packages:
 - "python3-pip"
 - "rename"
 remotes:
-- "url": "https://github.com/Bonkcoin/Bonkcoin-core.git"
-  "dir": "bonkcoin"
+- "url": "https://github.com/Boncoin/Boncoin-core.git"
+  "dir": "boncoin"
 files:
 - "lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
 script: |
@@ -100,7 +100,7 @@ script: |
   # install python-lief
   python3 -m pip install ${BUILD_DIR}/lief-0.12.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 
-  cd bonkcoin
+  cd boncoin
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do
@@ -118,14 +118,14 @@ script: |
   ./autogen.sh
   CONFIG_SITE=${BASEPREFIX}/`echo "${HOSTS}" | awk '{print $1;}'`/share/config.site ./configure --prefix=/
   make dist
-  SOURCEDIST=`echo bonkcoin-*.tar.gz`
+  SOURCEDIST=`echo boncoin-*.tar.gz`
   DISTNAME=`echo ${SOURCEDIST} | sed 's/.tar.*//'`
 
   # Correct tar file order
   mkdir -p temp
   pushd temp
   tar xf ../$SOURCEDIST
-  find bonkcoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
+  find boncoin-* | sort | tar --no-recursion --mode='u+rw,go+r-w,a+X' --owner=0 --group=0 -c -T - | gzip -9n > ../$SOURCEDIST
   mkdir -p $OUTDIR/src
   cp ../$SOURCEDIST $OUTDIR/src
   popd
@@ -146,7 +146,7 @@ script: |
     make ${MAKEOPTS} -C src check-symbols
     make deploy
     make install DESTDIR=${INSTALLPATH}
-    cp -f bonkcoin-*setup*.exe $OUTDIR/
+    cp -f boncoin-*setup*.exe $OUTDIR/
     cd installed
     mv ${DISTNAME}/bin/*.dll ${DISTNAME}/lib/
     find . -name "lib*.la" -delete

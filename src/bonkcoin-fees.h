@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_BONKCOIN_FEES_H
-#define BITCOIN_BONKCOIN_FEES_H
+#ifndef BITCOIN_BONCOIN_FEES_H
+#define BITCOIN_BONCOIN_FEES_H
 
 #include "amount.h"
 #include "chain.h"
@@ -22,10 +22,10 @@ enum FeeRatePreset
 };
 
 /** Estimate fee rate needed to get into the next nBlocks */
-CFeeRate GetBonkcoinFeeRate(int priority);
-const std::string GetBonkcoinPriorityLabel(int priority);
+CFeeRate GetBoncoinFeeRate(int priority);
+const std::string GetBoncoinPriorityLabel(int priority);
 #endif // ENABLE_WALLET
-CAmount GetBonkcoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
-CAmount GetBonkcoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit);
+CAmount GetBoncoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
+CAmount GetBoncoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit);
 
-#endif // BITCOIN_BONKCOIN_FEES_H
+#endif // BITCOIN_BONCOIN_FEES_H

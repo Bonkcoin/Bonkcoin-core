@@ -1,8 +1,8 @@
 ## Frequently Asked Questions ❓
 
-### How much Bonkcoin can exist?
+### How much Boncoin can exist?
 
-In the first 600,000 blocks (about 1 year and 2 months) 100 billion Bonkcoin will be mined. After this, every block will award 10,000 Bonkcoin. At one block per minute this equates to an additional ~5.25 billion Bonkcoin per year. Because a flat amount of new coins are mined, Bonkcoin inflates less each year.
+In the first 600,000 blocks (about 1 year and 2 months) 100 billion Boncoin will be mined. After this, every block will award 10,000 Boncoin. At one block per minute this equates to an additional ~5.25 billion Boncoin per year. Because a flat amount of new coins are mined, Boncoin inflates less each year.
 
 Inflation = ~5.25 Billion/TotalSupply
 
@@ -10,11 +10,11 @@ Since TotalSupply increases each year, inflation decreases.
 
 ### Mining information ⛏
 
-Bonkcoin uses a simplified variant of the scrypt key derivation function as its
+Boncoin uses a simplified variant of the scrypt key derivation function as its
 proof of work with a target time of one minute per block and difficulty
 readjustment after every block. The block rewards are fixed and halve every
 100,000 blocks. Starting with the 600,000th block, a permanent reward of
-10,000 Bonkcoin per block will be issued.
+10,000 Boncoin per block will be issued.
 
 Reasoning from Dogecoin:
 
@@ -31,7 +31,7 @@ lessen the impact of sudden increases and decreases of network hashing rate.
 
 **The current block reward schedule:**
 
-| Block                | Reward in Bonkcoin |
+| Block                | Reward in Boncoin |
 | :------------------- | -----------------: |
 | 1–99,999             |            500,000 |
 | 100,000–199,999      |            250,000 |

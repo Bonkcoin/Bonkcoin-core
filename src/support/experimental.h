@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BONKCOIN_SUPPORT_EXPERIMENTAL_H
-#define BONKCOIN_SUPPORT_EXPERIMENTAL_H
+#ifndef BONCOIN_SUPPORT_EXPERIMENTAL_H
+#define BONCOIN_SUPPORT_EXPERIMENTAL_H
 
 // include config for experimental flag
 #if defined(HAVE_CONFIG_H)

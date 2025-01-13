@@ -9,7 +9,7 @@
 
 #include "amount.h"
 #include "auxpow.h"
-#include "bonkcoin-fees.h"
+#include "boncoin-fees.h"
 #include "streams.h"
 #include "tinyformat.h"
 #include "ui_interface.h"
@@ -69,7 +69,7 @@ static const CAmount DEFAULT_DISCARD_THRESHOLD = COIN / 100;
 
 //! minimum recommended increment for BIP 125 replacement txs
 /*
- * Bonkcoin: Scaled to 1/10th of the recommended transaction fee to make RBF
+ * Boncoin: Scaled to 1/10th of the recommended transaction fee to make RBF
  * cheaper than CPFP. This reduces onchain pollution by encouraging transactions
  * to be replaced in the mempool, rather than be respent by another transaction
  * which then both would have to be mined, taking up block space and increasing
@@ -78,7 +78,7 @@ static const CAmount DEFAULT_DISCARD_THRESHOLD = COIN / 100;
  */
 static const CAmount WALLET_INCREMENTAL_RELAY_FEE = RECOMMENDED_MIN_TX_FEE / 10;
 /*
- * Bonkcoin: Creating change outputs at exactly the dustlimit is counter-
+ * Boncoin: Creating change outputs at exactly the dustlimit is counter-
  * productive because it leaves no space to bump the fee up, so we make the
  * minimum change higher than the discard threshold.
  *
@@ -835,13 +835,13 @@ public:
      */
     static CAmount GetMinimumFee(const CMutableTransaction& tx, unsigned int nTxBytes, unsigned int nConfirmTarget, const CTxMemPool& pool, CAmount targetFee);
     /**
-     * Bonkcoin: Get a fee targetting a specific transaction speed.
+     * Boncoin: Get a fee targetting a specific transaction speed.
      */
-    CAmount GetBonkcoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed);
+    CAmount GetBoncoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed);
     /**
-     * Bonkcoin: Get a fee targetting a specific transaction speed.
+     * Boncoin: Get a fee targetting a specific transaction speed.
      */
-    static CAmount GetBonkcoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed, CAmount targetFee);
+    static CAmount GetBoncoinPriorityFee(const CMutableTransaction& tx, unsigned int nTxBytes, FeeRatePreset nSpeed, CAmount targetFee);
     /**
      * Return the minimum required fee taking into account the
      * floating relay fee and user set minimum transaction fee
@@ -849,7 +849,7 @@ public:
     static CAmount GetRequiredFee(const CMutableTransaction& tx, unsigned int nTxBytes);
     /**
      * Return the minimum required fee taking into account the
-     * floating relay fee and user set minimum transaction fee, but not the Bonkcoin dust fee.
+     * floating relay fee and user set minimum transaction fee, but not the Boncoin dust fee.
      */
     static CAmount GetRequiredFee(unsigned int nTxBytes);
 

@@ -1,9 +1,9 @@
-Bonkcoin Core 1.1.0
+Boncoin Core 1.1.0
 =====================
 
 Development
 ---------------------
-The Bonkcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Boncoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -18,8 +18,8 @@ The Bonkcoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Bonkcoin thread](https://bitcointalk.org/index.php?topic=361813.0).
-* Development discussion on [r/BonkcoinDev](https://reddit.com/r/bonkcoindev)
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Boncoin thread](https://bitcointalk.org/index.php?topic=361813.0).
+* Development discussion on [r/BoncoinDev](https://reddit.com/r/boncoindev)
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
@@ -33,6 +33,6 @@ The Bonkcoin repo's [root README](/README.md) contains relevant information on t
 License
 ---------------------
 Distributed under the [MIT software license](/COPYING).
-This product includes software developed by the Bitcoin developers for use in [Bonkcoin Core](https://www.bitcoin.org/). 
+This product includes software developed by the Bitcoin developers for use in [Boncoin Core](https://www.bitcoin.org/). 
 This product includes software developed by the OpenSSL Project for use in the [OpenSSL Toolkit](https://www.openssl.org/). This product includes
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), and UPnP software written by Thomas Bernard.

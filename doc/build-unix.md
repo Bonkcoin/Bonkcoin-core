@@ -1,4 +1,4 @@
-# Unix Build of Bonkcoin Core
+# Unix Build of Boncoin Core
 
 This installation guide serves as a basis for all UNIX and UNIX-like operating
 systems. All examples in this guide are illustrated using an Ubuntu/Debian OS,
@@ -26,7 +26,7 @@ below.
 
 ## Install dependencies
 
-You must install required dependencies to build a basic Bonkcoin daemon, optional dependencies may vary according to your requirements.
+You must install required dependencies to build a basic Boncoin daemon, optional dependencies may vary according to your requirements.
 
 Wallet is optional to run a node, see [Wallet](#wallet) section to enable them.
 
@@ -54,7 +54,7 @@ For the versions used in the release, see [release-process.md](release-process.m
 
 ### Using packaged dependencies
 
-Bonkcoin Core's released binaries are built using the "depends system", which
+Boncoin Core's released binaries are built using the "depends system", which
 contains exact, tested versions of all dependencies. To create binaries that are
 using only fully tested dependencies, see the documentation in the
 [depends directory](../depends/README.md) and the
@@ -76,7 +76,7 @@ sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-chrono
 
 **Optional dependencies** :
 ```bash
-# Qt (required for bonkcoin-qt GUI)
+# Qt (required for boncoin-qt GUI)
 sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler libqrencode-dev
 
 # BerkeleyDB (version 5.3)
@@ -91,7 +91,7 @@ sudo apt-get install libminiupnpc-dev
 
 ## Build steps
 
-According to installed dependencies, the following steps will compile `bonkcoind`, `bonkcoin-cli` and `bonkcoin-qt`.
+According to installed dependencies, the following steps will compile `boncoind`, `boncoin-cli` and `boncoin-qt`.
 
 ```bash
 ./autogen.sh
@@ -106,7 +106,7 @@ See [Build configuration](#build-configuration) for extra settings.
 Configurations are done during the `./configure` step. Use `--help` to see all available options.
 
 #### Enable Qt GUI
-Create `bonkcoin-qt`, the core wallet GUI.
+Create `boncoin-qt`, the core wallet GUI.
 ```bash
 ./configure --with-gui
 ```
@@ -114,7 +114,7 @@ Create `bonkcoin-qt`, the core wallet GUI.
 #### Wallet
 BerkeleyDB is required for wallet functionality and use of the `wallet.dat` file.
 
-By default, **Bonkcoin Core expects BerkeleyDB 5.3**.
+By default, **Boncoin Core expects BerkeleyDB 5.3**.
 You can use a different version by specifying `--with-incompatible-bdb` flag.
 
 If you have to build it yourself, you can
@@ -127,12 +127,12 @@ like so:
 
 from the root of the repository.
 
-Otherwise, you can build Bonkcoin Core from self-compiled [depends](/depends/README.md).
+Otherwise, you can build Boncoin Core from self-compiled [depends](/depends/README.md).
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see [*Disable-wallet mode*](#disable-wallet-mode)).
 
 #### Disable-wallet mode
-When the intention is to run only a P2P node without a wallet, Bonkcoin may be compiled in
+When the intention is to run only a P2P node without a wallet, Boncoin may be compiled in
 disable-wallet mode with:
 
 ```bash
@@ -155,7 +155,7 @@ turned off by default.  See the configure options for upnp behavior desired:
 ```
 
 #### Security
-To help make your Bonkcoin installation more secure by making certain attacks impossible to
+To help make your Boncoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -179,7 +179,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-	`scanelf -e ./bonkcoin`
+	`scanelf -e ./boncoin`
 
     The output should contain:
 
@@ -187,13 +187,13 @@ Hardening enables the following features:
 
 * Non-executable Stack
     If the stack is executable, trivial stack-based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, Bonkcoin should be built with a non-executable stack,
+    vulnerable buffers are found. By default, Boncoin should be built with a non-executable stack,
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling, use:
-    `scanelf -e ./bonkcoin`
+    `scanelf -e ./boncoin`
 
     the output should contain:
     `STK/REL/PTL RW- R-- RW-`
@@ -204,7 +204,7 @@ Hardening enables the following features:
 #### Memory Requirements
 
 C++ compilers are memory-hungry. It is recommended to have at
-least 1.5 GB of memory available when compiling Bonkcoin Core.
+least 1.5 GB of memory available when compiling Boncoin Core.
 On systems with less, gcc can be tuned to conserve memory with additional CXXFLAGS:
 
 ```bash

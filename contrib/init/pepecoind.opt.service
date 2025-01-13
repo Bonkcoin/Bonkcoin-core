@@ -3,17 +3,17 @@
 #
 # The relevant paths are:
 #
-#/opt/bonkcoin/bonkcoind
-#/etc/opt/bonkcoin/
-#/var/opt/bonkcoin/
+#/opt/boncoin/boncoind
+#/etc/opt/boncoin/
+#/var/opt/boncoin/
 
 [Unit]
-Description=Bonkcoin's distributed currency daemon
+Description=Boncoin's distributed currency daemon
 After=network.target
 
 [Service]
 Type=simple
-ExecStart=/opt/bonkcoin/bin/bonkcoind -conf=/etc/opt/bonkcoin/bonkcoin.conf -datadir=/var/opt/bonkcoin
+ExecStart=/opt/boncoin/bin/boncoind -conf=/etc/opt/boncoin/boncoin.conf -datadir=/var/opt/boncoin
 
 KillSignal=SIGINT
 Restart=always
@@ -23,8 +23,8 @@ TimeoutStartSec=5
 StartLimitIntervalSec=120
 StartLimitBurst=5
 
-User=bonkcoin
-Group=bonkcoin
+User=boncoin
+Group=boncoin
 
 ### Restrict resource consumption
 MemoryAccounting=yes
@@ -41,8 +41,8 @@ TemporaryFileSystem=/:ro
 BindReadOnlyPaths=/etc/ /lib/ /lib64/
 
 # Add daemon paths
-BindReadOnlyPaths=/opt/bonkcoin/ /etc/opt/bonkcoin/
-BindPaths=/var/opt/bonkcoin/
+BindReadOnlyPaths=/opt/boncoin/ /etc/opt/boncoin/
+BindPaths=/var/opt/boncoin/
 
 ### Restrict access to system.
 

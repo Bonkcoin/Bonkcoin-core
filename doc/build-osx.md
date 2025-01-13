@@ -25,17 +25,17 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Bonkcoin Core
+Build Boncoin Core
 ------------------------
 
-1. Clone the bonkcoin source code and cd into `bonkcoin`
+1. Clone the boncoin source code and cd into `boncoin`
 
-        git clone https://github.com/Bonkcoin/bonkcoin
-        cd bonkcoin
+        git clone https://github.com/Boncoin/boncoin
+        cd boncoin
 
-2.  Build bonkcoin:
+2.  Build boncoin:
 
-    Configure and build the headless bonkcoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless boncoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -54,37 +54,37 @@ Build Bonkcoin Core
 Running
 -------
 
-Bonkcoin Core is now available at `./src/bonkcoind`
+Boncoin Core is now available at `./src/boncoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=bonkcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/bonkcoin/bonkcoin.conf"
+    echo -e "rpcuser=boncoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/boncoin/boncoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/bonkcoin/bonkcoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/boncoin/boncoin.conf"
 
-The first time you run bonkcoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run boncoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Bonkcoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Boncoin/debug.log
 
 Other commands:
 -------
 
-    ./src/bonkcoind -daemon # Starts the bonkcoin daemon.
-    ./src/bonkcoin-cli --help # Outputs a list of command-line options.
-    ./src/bonkcoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/boncoind -daemon # Starts the boncoin daemon.
+    ./src/boncoin-cli --help # Outputs a list of command-line options.
+    ./src/boncoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for bonkcoin development.
+You can use Qt Creator as an IDE, for boncoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "bonkcoin-qt" as project name, enter src/qt as location
+4. Enter "boncoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -97,4 +97,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/Bonkcoin/bonkcoin/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/Boncoin/boncoin/issues/7714)

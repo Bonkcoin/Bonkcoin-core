@@ -7,8 +7,8 @@
 #include "chainparams.h"
 
 bool AllowDigishieldMinDifficultyForBlock(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params);
-CAmount GetBonkcoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
-unsigned int CalculateBonkcoinNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
+CAmount GetBoncoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
+unsigned int CalculateBoncoinNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
 
 /**
  * Check proof-of-work of a block header, taking auxpow into account.

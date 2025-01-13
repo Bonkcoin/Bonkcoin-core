@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.bonkcoin.bonkcoind</string>
+	<string>org.boncoin.boncoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/bonkcoind</string>
+		<string>/usr/local/bin/boncoind</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

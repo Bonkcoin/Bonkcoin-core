@@ -129,8 +129,8 @@ class TestNode(NodeConnCB):
 class AcceptBlockTest(BitcoinTestFramework):
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BONKCOIND", "bonkcoind"),
-                          help="bonkcoind binary to test")
+                          default=os.getenv("BONCOIND", "boncoind"),
+                          help="boncoind binary to test")
 
     def __init__(self):
         super().__init__()

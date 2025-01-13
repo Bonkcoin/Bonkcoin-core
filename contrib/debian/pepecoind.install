@@ -1,2 +1,2 @@
-usr/local/bin/bonkcoind usr/bin
-usr/local/bin/bonkcoin-cli usr/bin
+usr/local/bin/boncoind usr/bin
+usr/local/bin/boncoin-cli usr/bin

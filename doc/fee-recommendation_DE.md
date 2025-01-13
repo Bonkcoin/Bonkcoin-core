@@ -1,17 +1,17 @@
-Bonkcoin-Gebührenempfehlung
+Boncoin-Gebührenempfehlung
 ----------------------------
 
 _zuletzt aktualisiert für 1.0.0_
 
-Die Bonkcoin-Kette hat ein relativ niedrigen Blockintervall, 1 Megabyte Blockspace
+Die Boncoin-Kette hat ein relativ niedrigen Blockintervall, 1 Megabyte Blockspace
 und zielt darauf ab, den Leuten eine kostengünstige Möglichkeit für Transaktionen zu bieten. Daher ist Spam die größte
-Bedrohung für die Bonkcoin-Kette als Ganzes. Bonkcoin verwendet eine Transaktionsgebühr
+Bedrohung für die Boncoin-Kette als Ganzes. Boncoin verwendet eine Transaktionsgebühr
 und einen Dust-Abschreckungseffekt, um On-Chain-Spam zu bekämpfen.
 
-Bonkcoin Core implementiert eine Reihe von Standardeinstellungen in die Software, die die
+Boncoin Core implementiert eine Reihe von Standardeinstellungen in die Software, die die
 Empfehlungen der Entwickler zu Gebühren- und Dust-Grenzen widerspiegeln, die zum Zeitpunkt der
 Veröffentlichung die beste Einschätzung der Entwickler darstellen, wie diese Grenzen
-parametrisiert werden sollten. Die empfohlenen Standardwerte, wie sie in der Bonkcoin Core-Wallet implementiert sind, sind:
+parametrisiert werden sollten. Die empfohlenen Standardwerte, wie sie in der Boncoin Core-Wallet implementiert sind, sind:
 
 - **0,01 BONC pro Kilobyte** Transaktionsgebühr
 - **0,01 BONC** Staubgrenze (Verwerfungsschwelle)

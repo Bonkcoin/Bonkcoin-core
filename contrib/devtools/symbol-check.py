@@ -49,7 +49,7 @@ MAX_VERSIONS = {
 },
 'CXXABI':  (1,3,3),
 'GLIBCXX': (3,4,13),
-'V':         (0,5,0),  # xkb (bonkcoin-qt only)
+'V':         (0,5,0),  # xkb (boncoin-qt only)
 }
 
 # Ignore symbols that are exported as part of every executable
@@ -84,7 +84,7 @@ ELF_INTERPRETER_NAMES: Dict[lief.ELF.ARCH, Dict[lief.ENDIANNESS, str]] = {
 
 # Allowed NEEDED libraries
 ELF_ALLOWED_LIBRARIES = {
-# bonkcoind and bonkcoin-qt
+# boncoind and boncoin-qt
 'libgcc_s.so.1', # GCC base support
 'libc.so.6', # C library
 'libpthread.so.0', # threading
@@ -95,7 +95,7 @@ ELF_ALLOWED_LIBRARIES = {
 'ld-linux.so.2', # 32-bit dynamic linker
 'ld-linux-aarch64.so.1', # 64-bit ARM dynamic linker
 'ld-linux-armhf.so.3', # 32-bit ARM dynamic linker
-# bonkcoin-qt only
+# boncoin-qt only
 'libxcb.so.1', # part of X11
 'libxkbcommon.so.0', # keyboard keymapping
 'libxkbcommon-x11.so.0', # keyboard keymapping

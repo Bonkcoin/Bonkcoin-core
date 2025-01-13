@@ -1,2 +1,2 @@
-contrib/bonkcoind.bash-completion	bonkcoind
-contrib/bonkcoin-cli.bash-completion	bonkcoin-cli
+contrib/boncoind.bash-completion	boncoind
+contrib/boncoin-cli.bash-completion	boncoin-cli

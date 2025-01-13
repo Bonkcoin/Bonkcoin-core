@@ -1,6 +1,6 @@
-### This process has not be completed for Bonkcoin.
+### This process has not be completed for Boncoin.
 
-This is the process for Dogecoin. We do not have a repo similar to https://github.com/michilumin/dogecoin.git for Bonkcoin. We did not have the need to test this process as none of us develop on Mac. However, we may fix this in the future if there is enough demand for it.
+This is the process for Dogecoin. We do not have a repo similar to https://github.com/michilumin/dogecoin.git for Boncoin. We did not have the need to test this process as none of us develop on Mac. However, we may fix this in the future if there is enough demand for it.
 
 ----------------------------------------------------
 ### Building dogecoin-qt 1.14 on modern macs. ###

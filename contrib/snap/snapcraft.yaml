@@ -1,9 +1,9 @@
-name: bonkcoin
+name: boncoin
 # Running 'snapcraft register <name>' is advised
 version: '1.1.0'
-summary: Reference client of Bonkcoin, a peer-to-peer digital currency like Bitcoin.
+summary: Reference client of Boncoin, a peer-to-peer digital currency like Bitcoin.
 description: |
-  Bonkcoin is a community-driven cryptocurrency that was inspired by Dogecoin. The Bonkcoin Core software allows anyone to operate a node in the Bonkcoin blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
+  Boncoin is a community-driven cryptocurrency that was inspired by Dogecoin. The Boncoin Core software allows anyone to operate a node in the Boncoin blockchain networks and uses the Scrypt hashing method for Proof of Work. It is adapted from Bitcoin Core and other cryptocurrencies.
 
 grade: stable
 confinement: strict
@@ -19,30 +19,30 @@ architectures:
 
 apps:
   d:
-    command: bin/bonkcoind
+    command: bin/boncoind
     plugs: [home, removable-media, network, network-bind]
     environment:
-      # Override HOME so the datadir is located at ~/snap/bonkcoin-core/common/.bonkcoin/ instead of ~/snap/bonkcoin-core/current/.bonkcoin/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
+      # Override HOME so the datadir is located at ~/snap/boncoin-core/common/.boncoin/ instead of ~/snap/boncoin-core/current/.boncoin/, and each new version of the snap won't have a different data directory: https://docs.snapcraft.io/environment-variables/7983
       HOME: $SNAP_USER_COMMON
   qt:
     command-chain: [bin/desktop-launch]
-    command: bin/bonkcoin-qt
+    command: bin/boncoin-qt
     plugs: [home, removable-media, network, network-bind, desktop, x11, unity7]
     environment:
       HOME: $SNAP_USER_COMMON
       DISABLE_WAYLAND: 1
   cli:
-    command: bin/bonkcoin-cli
+    command: bin/boncoin-cli
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   tx:
-    command: bin/bonkcoin-tx
+    command: bin/boncoin-tx
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
   test:
-    command: bin/test_bonkcoin
+    command: bin/test_boncoin
     plugs: [home, removable-media, network]
     environment:
       HOME: $SNAP_USER_COMMON
@@ -77,48 +77,48 @@ parts:
       - xdg-user-dirs
       - fcitx-frontend-qt5
 
-  bonkcoin:
+  boncoin:
     plugin: nil
     override-build: |
-      echo "This script is viewable at https://github.com/Bonkcoin/bonkcoin/blob/master/contrib/snap/snapcraft.yaml"
+      echo "This script is viewable at https://github.com/Boncoin/boncoin/blob/master/contrib/snap/snapcraft.yaml"
       echo "Downloading files..."
-      if [ "$CRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but bonkcoin designates it as i686
+      if [ "$CRAFT_ARCH_TRIPLET" = "i386-linux-gnu" ]; then # snap designates 32-bit as i386, but boncoin designates it as i686
         BUILD_ARCH_TRIPLET=i686-pc-linux-gnu
       else
         BUILD_ARCH_TRIPLET=$CRAFT_ARCH_TRIPLET
       fi
-      wget https://github.com/Bonkcoin/bonkcoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/bonkcoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
-      wget https://github.com/Bonkcoin/gitian.sigs/archive/refs/heads/master.tar.gz
+      wget https://github.com/Boncoin/boncoin/releases/download/v${SNAPCRAFT_PROJECT_VERSION}/boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
+      wget https://github.com/Boncoin/gitian.sigs/archive/refs/heads/master.tar.gz
       tar -xvf master.tar.gz
       echo "Verifying secure hash matches signed values..."
-      checksum=$(sha256sum bonkcoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz)
-      if ! (grep -r $checksum * | grep bonkcoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz); then
+      checksum=$(sha256sum boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz)
+      if ! (grep -r $checksum * | grep boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz); then
         echo "Secure hash not verified."
         return
       else
         echo "Secure hash verified."
       fi
-      tar -xvf bonkcoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
+      tar -xvf boncoin-${SNAPCRAFT_PROJECT_VERSION}-${BUILD_ARCH_TRIPLET}.tar.gz
       echo "Running tests..."
-      if ! (bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_bonkcoin); then
-        echo "Bonkcoin tests failed."
+      if ! (boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_boncoin); then
+        echo "Boncoin tests failed."
         return
       else
-        echo "Bonkcoin tests passed."
+        echo "Boncoin tests passed."
       fi
-      wget https://raw.githubusercontent.com/Bonkcoin/bonkcoin/v${SNAPCRAFT_PROJECT_VERSION}/doc/release-notes.md
+      wget https://raw.githubusercontent.com/Boncoin/boncoin/v${SNAPCRAFT_PROJECT_VERSION}/doc/release-notes.md
       cat release-notes.md
-      echo "Installing Bonkcoin Core..."
+      echo "Installing Boncoin Core..."
       echo "Version ${SNAPCRAFT_PROJECT_VERSION}"
-      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/bonkcoind
-      if ! ([ "$BUILD_ARCH_TRIPLET" = "aarch64-linux-gnu" ]); then # there is no official bonkcoin-qt build on arm64
-        install -m 0755 -D -t $CRAFT_PART_INSTALL/bin bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/bonkcoin-qt
+      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/boncoind
+      if ! ([ "$BUILD_ARCH_TRIPLET" = "aarch64-linux-gnu" ]); then # there is no official boncoin-qt build on arm64
+        install -m 0755 -D -t $CRAFT_PART_INSTALL/bin boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/boncoin-qt
       fi
-      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/bonkcoin-cli
-      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/bonkcoin-tx
-      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin bonkcoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_bonkcoin
-      wget https://raw.githubusercontent.com/Bonkcoin/bonkcoin/master/share/pixmaps/bonkcoin128.png
-      install -m 0644 -D -t $CRAFT_PART_INSTALL/share/pixmaps bonkcoin128.png
+      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/boncoin-cli
+      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/boncoin-tx
+      install -m 0755 -D -t $CRAFT_PART_INSTALL/bin boncoin-${SNAPCRAFT_PROJECT_VERSION}/bin/test_boncoin
+      wget https://raw.githubusercontent.com/Boncoin/boncoin/master/share/pixmaps/boncoin128.png
+      install -m 0644 -D -t $CRAFT_PART_INSTALL/share/pixmaps boncoin128.png
     build-packages:
       - wget
     after:

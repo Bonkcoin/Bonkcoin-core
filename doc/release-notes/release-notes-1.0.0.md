@@ -1,4 +1,4 @@
-##Bonkcoin Core 1.0.0 Release Notes (Initial Release)
+##Boncoin Core 1.0.0 Release Notes (Initial Release)
 
 ####Technical
 
@@ -9,10 +9,10 @@
     | P2P      |   14327 |   44874 |   18444 |
     | RPC      |   15612 |   44873 |   18332 |
 * Set AuxPow ChainID to `63`.
-* Remove occurances of Dogecoin and replace with Bonkcoin where appropriate.
-* All Bonkcoin addresses now start with the letter `P`. All other address prefixes Dogecoin uses will be adopted by Bonkcoin for familiarity purposes.
+* Remove occurances of Dogecoin and replace with Boncoin where appropriate.
+* All Boncoin addresses now start with the letter `P`. All other address prefixes Dogecoin uses will be adopted by Boncoin for familiarity purposes.
 * Update `PUBKEY_ADDRESS` from `30` to `56` (Address prefixes start with `P` instead of `D`). Update `base58_keys_valid.json` and `base58_keys_invalid.json` with `gen_base58_test_vectors.py`
-* Update `key_tests.cpp` with new Bonkcoin addresses to resolve test failures.
+* Update `key_tests.cpp` with new Boncoin addresses to resolve test failures.
 * Resolve test failures in `key_tests.cpp`
 * Resolve test failures in `bctest.py`
 * Initialize genesis block data (nonce, timestamp, unix time, hashes, merkle root hash). Remove checkpoints. Set new `nMinimumChainWork` and `defaultAssumeValid`
@@ -23,8 +23,8 @@
 * Change Unix timestamp for regtest block to Dogecoin and Litecoin's timestamp for their blocks. This makes the python unit tests easier to run.
 * Add seed nodes for main and test nets
 * Add DNS Seed nodes to `chainparams.cpp` and dnsseed-policy to point to generic seeder project on github
-* Update Dogecoin address strings to Bonkcoin addresses in `uritests.cpp`
-* Change magic numbers in `pow.cpp` and `bonkcoin.cpp` to the correct values which reflect the block height digishield min difficulty block activates
+* Update Dogecoin address strings to Boncoin addresses in `uritests.cpp`
+* Change magic numbers in `pow.cpp` and `boncoin.cpp` to the correct values which reflect the block height digishield min difficulty block activates
 * Update `checkpointsData` to the genesis blocks
 * Update `nMinimumChainWork`. It was too high. 
 * Set client version to `1.0.0` in `clientversion.h`
@@ -32,32 +32,32 @@
 
 ####Design
 
-* Add new Bonkcoin vector logos.
-* Add newer and nicer `bonkcoin.png` logo to splash screen.
+* Add new Boncoin vector logos.
+* Add newer and nicer `boncoin.png` logo to splash screen.
 * Remove Dogecoin logos `qt/res/icons` folder
-* Update the `wallet_bgcoin.png` file to the new Bonkcoin logo
+* Update the `wallet_bgcoin.png` file to the new Boncoin logo
 * Remove Comic Sans. Add `RobotoMono` and set GUI to use `Monospace` font
 * Change `"Wow"` to `"Overview"`, `"Such Send"` to `"Send"`, `"Much Receive"` to `"Receive"`, and `"So Print"` to `"Print"`
 * Remove `"much"` and `"such"` strings in `README.md`
 * Change UI text `"Very new address"` to `"New address"`
-* Add `bonkcoin.icns` file
-* Update fee strings in GUI from Dogecoin theme to Bonkcoin theme
-* Create new `about.png` with a Bonkcoin logo
+* Add `boncoin.icns` file
+* Update fee strings in GUI from Dogecoin theme to Boncoin theme
+* Create new `about.png` with a Boncoin logo
 * Add new design for `paper_wallet.png`
 * Remove Dogecoin explorer urls
-* Update tx urls in gui to point to the Bonkcoin blockchain explorer PepeExplorer.com
+* Update tx urls in gui to point to the Boncoin blockchain explorer PepeExplorer.com
 
 ####Documentation
 
-* Generate Bonkcoin man pages
+* Generate Boncoin man pages
 * Add `--with-gui` to `build-windows.md` instructions
-* Change website url to bonkscoin.io
+* Change website url to bonscoin.io
 * Change ticker symbol from `PPC` to `BONC` in `readme.md`, man pages, and `amount.cpp`
 * Update `assets-attribution.md`
 * Update `gen-manpages.sh` to target the bash shell
-* Update readme files to correct urls and Pepe icon/text. Remove references to Bonkcoin in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
+* Update readme files to correct urls and Pepe icon/text. Remove references to Boncoin in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
 * Add link to official community Discord
-* Update `FAQ.md` to reflect Bonkcoin changes
-* Update `README_windows.txt` to point to the Dogecoin wiki (The wiki for Dogecoin is a good guide for Bonkcoin as well)
-* Change Dogecoin addresses to Bonkcoin addresses in help text.
+* Update `FAQ.md` to reflect Boncoin changes
+* Update `README_windows.txt` to point to the Dogecoin wiki (The wiki for Dogecoin is a good guide for Boncoin as well)
+* Change Dogecoin addresses to Boncoin addresses in help text.
 * Translate `readme.md` pages

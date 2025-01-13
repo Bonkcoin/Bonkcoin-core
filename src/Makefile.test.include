@@ -2,11 +2,11 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-TESTS += test/test_bonkcoin
-bin_PROGRAMS += test/test_bonkcoin
-noinst_PROGRAMS += test/test_bonkcoin_fuzzy
+TESTS += test/test_boncoin
+bin_PROGRAMS += test/test_boncoin
+noinst_PROGRAMS += test/test_boncoin_fuzzy
 TEST_SRCDIR = test
-TEST_BINARY=test/test_bonkcoin$(EXEEXT)
+TEST_BINARY=test/test_boncoin$(EXEEXT)
 
 
 EXTRA_DIST += \
@@ -96,7 +96,7 @@ BITCOIN_TESTS =\
   test/crypto_tests.cpp \
   test/cuckoocache_tests.cpp \
   test/DoS_tests.cpp \
-  test/bonkcoin_tests.cpp \
+  test/boncoin_tests.cpp \
   test/getarg_tests.cpp \
   test/hash_tests.cpp \
   test/key_tests.cpp \
@@ -150,42 +150,42 @@ BITCOIN_TESTS += \
   wallet/test/crypto_tests.cpp
 endif
 
-test_test_bonkcoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_bonkcoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS) $(EVENT_CFLAGS)
-test_test_bonkcoin_LDADD = $(LIBBONKCOIN_SERVER) $(LIBBONKCOIN_CLI) $(LIBBONKCOIN_COMMON) $(LIBBONKCOIN_UTIL) $(LIBBONKCOIN_CONSENSUS) $(LIBBONKCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+test_test_boncoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_boncoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_boncoin_LDADD = $(LIBBONCOIN_SERVER) $(LIBBONCOIN_CLI) $(LIBBONCOIN_COMMON) $(LIBBONCOIN_UTIL) $(LIBBONCOIN_CONSENSUS) $(LIBBONCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS)
-test_test_bonkcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_boncoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 if ENABLE_WALLET
-test_test_bonkcoin_LDADD += $(LIBBONKCOIN_WALLET)
+test_test_boncoin_LDADD += $(LIBBONCOIN_WALLET)
 endif
 
-test_test_bonkcoin_LDADD += $(LIBBONKCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-test_test_bonkcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+test_test_boncoin_LDADD += $(LIBBONCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+test_test_boncoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
-test_test_bonkcoin_LDADD += $(ZMQ_LIBS)
+test_test_boncoin_LDADD += $(ZMQ_LIBS)
 endif
 #
 
 # test_bitcoin_fuzzy binary #
-test_test_bonkcoin_fuzzy_SOURCES = test/test_bitcoin_fuzzy.cpp
-test_test_bonkcoin_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-test_test_bonkcoin_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-test_test_bonkcoin_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+test_test_boncoin_fuzzy_SOURCES = test/test_bitcoin_fuzzy.cpp
+test_test_boncoin_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+test_test_boncoin_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_boncoin_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-test_test_bonkcoin_fuzzy_LDADD = \
+test_test_boncoin_fuzzy_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBBONKCOIN_SERVER) \
-  $(LIBBONKCOIN_COMMON) \
-  $(LIBBONKCOIN_UTIL) \
-  $(LIBBONKCOIN_CONSENSUS) \
-  $(LIBBONKCOIN_CRYPTO) \
+  $(LIBBONCOIN_SERVER) \
+  $(LIBBONCOIN_COMMON) \
+  $(LIBBONCOIN_UTIL) \
+  $(LIBBONCOIN_CONSENSUS) \
+  $(LIBBONCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-test_test_bonkcoin_fuzzy_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+test_test_boncoin_fuzzy_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-nodist_test_test_bonkcoin_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_boncoin_SOURCES = $(GENERATED_TEST_FILES)
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
@@ -196,13 +196,13 @@ CLEANFILES += $(CLEAN_BITCOIN_TEST)
 # This file is problematic for out-of-tree builds if it exists.
 DISTCLEANFILES += test/buildenv.pyc
 
-bonkcoin_test: $(TEST_BINARY)
+boncoin_test: $(TEST_BINARY)
 
-bonkcoin_test_check: $(TEST_BINARY) FORCE
+boncoin_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-bonkcoin_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_bonkcoin_OBJECTS) $(TEST_BINARY)
+boncoin_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_boncoin_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	@echo "Running test/bitcoin-util-test.py..."

@@ -1,4 +1,4 @@
-Source: Bonkcoin
+Source: Boncoin
 Section: utils
 Priority: optional
 Maintainer:
@@ -26,15 +26,15 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://bonkscoin.io/
-Vcs-Git: git://github.com/Bonkcoin/bonkcoin.git
-Vcs-Browser: http://github.com/Bonkcoin/bonkcoin
+Homepage: https://bonscoin.io/
+Vcs-Git: git://github.com/Boncoin/boncoin.git
+Vcs-Browser: http://github.com/Boncoin/boncoin
 
-Package: bonkcoind
+Package: boncoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Bonkcoin is a free open source peer-to-peer electronic cash system that
+ Boncoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -43,31 +43,31 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 20+ GB of space, slowly growing.
  .
- This package provides the daemon, bonkcoind, and the CLI tool
- bonkcoin-cli to interact with the daemon.
+ This package provides the daemon, boncoind, and the CLI tool
+ boncoin-cli to interact with the daemon.
 
-Package: bonkcoin-qt
+Package: boncoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Bonkcoin is a free open source peer-to-peer electronic cash system that
+ Boncoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Bonkcoin-Qt, a GUI for Bonkcoin based on Qt.
+ This package provides Boncoin-Qt, a GUI for Boncoin based on Qt.
 
-Package: bonkcoin-tx
+Package: boncoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Bonkcoin is a free open source peer-to-peer electronic cash system that
+ Boncoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides bonkcoin-tx, a command-line transaction creation
- tool which can be used without a bonkcoin daemon.  Some means of
+ This package provides boncoin-tx, a command-line transaction creation
+ tool which can be used without a boncoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

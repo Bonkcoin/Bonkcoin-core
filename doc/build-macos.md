@@ -1,11 +1,11 @@
-# Building bonkcoin 1.14 on MacOS #
+# Building boncoin 1.14 on MacOS #
 
 Tested on MacOs Ventura and Sonoma on Intel (x86_64) and Apple Silicon (arm64) macs.
 
-### Clone bonkcoin locally, or check it out, etc. ###
+### Clone boncoin locally, or check it out, etc. ###
 
 ```sh
-git clone https://github.com/Bonkcoin/bonkcoin.git
+git clone https://github.com/Boncoin/boncoin.git
 ```
 
 ### Set up OSX basic build dependencies. ##
@@ -40,10 +40,10 @@ brew install autoconf automake libtool miniupnpc openssl pkg-config protobuf@21 
 brew link protobuf@21
 ```
 
-### Go back to your Bonkcoin repo ###
+### Go back to your Boncoin repo ###
 
 ```sh
-cd ~/bonkcoin
+cd ~/boncoin
 
 ./autogen.sh
 ./configure --with-gui=qt5 --with-boost=`brew --prefix boost`
@@ -61,5 +61,5 @@ Go have another beverage.
 Run it.
 
 ```sh
-/usr/local/bin/bonkcoin-qt
+/usr/local/bin/boncoin-qt
 ```

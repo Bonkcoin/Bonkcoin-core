@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bonkcoin"
-            VALUE "FileDescription",    "bonkcoind (Bonkcoin node with a JSON-RPC server)"
+            VALUE "CompanyName",        "Boncoin"
+            VALUE "FileDescription",    "boncoind (Boncoin node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "bonkcoind"
+            VALUE "InternalName",       "boncoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "bonkcoind.exe"
-            VALUE "ProductName",        "bonkcoind"
+            VALUE "OriginalFilename",   "boncoind.exe"
+            VALUE "ProductName",        "boncoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

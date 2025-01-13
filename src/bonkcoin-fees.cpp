@@ -7,11 +7,11 @@
 
 #include "policy/policy.h"
 #include "arith_uint256.h"
-#include "bonkcoin.h"
+#include "boncoin.h"
 #include "txmempool.h"
 #include "util.h"
 #include "validation.h"
-#include "bonkcoin-fees.h"
+#include "boncoin-fees.h"
 #include "amount.h"
 #ifdef ENABLE_WALLET
 #include "wallet/wallet.h"
@@ -19,7 +19,7 @@
 
 #ifdef ENABLE_WALLET
 
-CFeeRate GetBonkcoinFeeRate(int priority)
+CFeeRate GetBoncoinFeeRate(int priority)
 {
     switch(priority)
     {
@@ -40,7 +40,7 @@ CFeeRate GetBonkcoinFeeRate(int priority)
     return CWallet::minTxFee;
 }
 
-const std::string GetBonkcoinPriorityLabel(int priority)
+const std::string GetBoncoinPriorityLabel(int priority)
 {
     switch(priority)
     {
@@ -64,7 +64,7 @@ const std::string GetBonkcoinPriorityLabel(int priority)
 
 #endif
 
-CAmount GetBonkcoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
+CAmount GetBoncoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
 {
     {
         LOCK(mempool.cs);
@@ -77,7 +77,7 @@ CAmount GetBonkcoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool
     }
 
     CAmount nMinFee = ::minRelayTxFeeRate.GetFee(nBytes);
-    nMinFee += GetBonkcoinDustFee(tx.vout, nDustLimit);
+    nMinFee += GetBoncoinDustFee(tx.vout, nDustLimit);
 
     if (fAllowFree)
     {
@@ -94,7 +94,7 @@ CAmount GetBonkcoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool
     return nMinFee;
 }
 
-CAmount GetBonkcoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit) {
+CAmount GetBoncoinDustFee(const std::vector<CTxOut> &vout, const CAmount dustLimit) {
     CAmount nFee = 0;
 
     // To limit dust spam, add the dust limit for each output

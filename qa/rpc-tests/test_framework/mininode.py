@@ -49,7 +49,7 @@ MAX_INV_SZ = 50000
 MAX_LOCATOR_SZ = 101
 MAX_BLOCK_BASE_SIZE = 1000000
 
-COIN = 100000000 # mlumin 5/2021: In terms of Bonkcoin, 1 bonkcoin or 100,000,000 koinu.
+COIN = 100000000 # mlumin 5/2021: In terms of Boncoin, 1 boncoin or 100,000,000 koinu.
 
 NODE_NETWORK = (1 << 0)
 NODE_GETUTXO = (1 << 1)
@@ -1667,7 +1667,7 @@ class NodeConn(asyncore.dispatcher):
             vt.addrFrom.port = 0
             self.send_message(vt, True)
 
-        print('MiniNode: Connecting to Bonkcoin Node IP # ' + dstaddr + ':' \
+        print('MiniNode: Connecting to Boncoin Node IP # ' + dstaddr + ':' \
             + str(dstport))
 
         try:

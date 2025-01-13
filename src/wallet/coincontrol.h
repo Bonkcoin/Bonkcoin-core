@@ -7,7 +7,7 @@
 #define BITCOIN_WALLET_COINCONTROL_H
 
 #include "primitives/transaction.h"
-#include "bonkcoin-fees.h"
+#include "boncoin-fees.h"
 
 /** Coin Control Features. */
 class CCoinControl

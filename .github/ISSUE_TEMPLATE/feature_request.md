@@ -4,10 +4,10 @@ about: Suggest an idea for this project
 title: '[feat] '
 ---
 
-<!-- Please make sure you are posting an technical issue related to Bonkcoin Core. --> 
+<!-- Please make sure you are posting an technical issue related to Boncoin Core. --> 
 
-<!-- For general questions about Bonkcoin or wallet recovery please use one of the various communities:
-* [Discord](https://bonkscoin.io/discord) -->
+<!-- For general questions about Boncoin or wallet recovery please use one of the various communities:
+* [Discord](https://bonscoin.io/discord) -->
 
 <!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
 

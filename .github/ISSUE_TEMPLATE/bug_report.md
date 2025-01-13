@@ -4,10 +4,10 @@ about: Create a report to help us improve
 title: '[bug] '
 ---
 
-<!-- Please make sure you are posting an technical issue related to Bonkcoin Core. --> 
+<!-- Please make sure you are posting an technical issue related to Boncoin Core. --> 
 
-<!-- For general questions about Bonkcoin or wallet recovery please use one of the various communities:
-* [Discord](https://bonkscoin.io/discord) -->
+<!-- For general questions about Boncoin or wallet recovery please use one of the various communities:
+* [Discord](https://bonscoin.io/discord) -->
 
 <!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
 
@@ -25,7 +25,7 @@ title: '[bug] '
 **Screenshots**
 <!-- If the issue is related to the GUI, screenshots can be added to this issue via drag & drop. -->
 
-**Bonkcoin Core version**
+**Boncoin Core version**
 <!-- List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA. -->
 
 **Machine specs**

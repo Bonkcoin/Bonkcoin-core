@@ -7,19 +7,19 @@ define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2025)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core, Dogecoin Core, and Bonkcoin Core]])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core, Dogecoin Core, and Boncoin Core]])
 define(_CURRENT_RELEASE_DATE,[[1970-01-01]])
 define(_EXPECTED_DAYS_TO_NEXT_RELEASE,[270])
-AC_INIT([Bonkcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/Bonkcoin/Bonkcoin-core/issues],[bonkcoin],[https://bonkscoin.io/])
+AC_INIT([Boncoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/Boncoin/Boncoin-core/issues],[boncoin],[https://bonscoin.io/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=bonkcoind
-BITCOIN_GUI_NAME=bonkcoin-qt
-BITCOIN_CLI_NAME=bonkcoin-cli
-BITCOIN_TX_NAME=bonkcoin-tx
+BITCOIN_DAEMON_NAME=boncoind
+BITCOIN_GUI_NAME=boncoin-qt
+BITCOIN_CLI_NAME=boncoin-cli
+BITCOIN_TX_NAME=boncoin-tx
 
 AC_CANONICAL_HOST
 
@@ -955,11 +955,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build bonkcoind])
+AC_MSG_CHECKING([whether to build boncoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (bonkcoin-cli bonkcoin-tx)])
+AC_MSG_CHECKING([whether to build utils (boncoin-cli boncoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1060,7 +1060,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_bonkcoin-qt])
+  AC_MSG_CHECKING([whether to build test_boncoin-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1071,7 +1071,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_bonkcoin])
+AC_MSG_CHECKING([whether to build test_boncoin])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

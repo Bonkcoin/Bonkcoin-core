@@ -18,7 +18,7 @@
 
 #include "base58.h"
 #include "chainparams.h"
-#include "bonkcoin-fees.h"
+#include "boncoin-fees.h"
 #include "wallet/coincontrol.h"
 #include "validation.h" // mempool and minRelayTxFeeRate
 #include "ui_interface.h"
@@ -591,7 +591,7 @@ void SendCoinsDialog::updateFeeSectionControls()
 {
     ui->sliderSmartFee          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelPriority           ->setEnabled(ui->radioSmartFee->isChecked());
-    // Bonkcoin: We don't use smart fees in the UI, so don't need to warn they're not available
+    // Boncoin: We don't use smart fees in the UI, so don't need to warn they're not available
     // ui->labelPriority2          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelPriority3          ->setEnabled(ui->radioSmartFee->isChecked());
     ui->labelFeeEstimation      ->setEnabled(ui->radioSmartFee->isChecked());
@@ -616,8 +616,8 @@ void SendCoinsDialog::updateGlobalFeeVariables()
         CoinControlDialog::coinControl->nMinimumTotalFee = 0;
 
         // show the estimated required time for confirmation
-        // Bonkcoin: We manually set height well past the last hard fork here
-        ui->confirmationTargetLabel->setText(GetBonkcoinPriorityLabel(nPriority).c_str());
+        // Boncoin: We manually set height well past the last hard fork here
+        ui->confirmationTargetLabel->setText(GetBoncoinPriorityLabel(nPriority).c_str());
     }
     else
     {
@@ -656,7 +656,7 @@ void SendCoinsDialog::updateFeeLabel()
         return;
 
     int nPriority = ui->sliderSmartFee->value();
-    CFeeRate feeRate = GetBonkcoinFeeRate(nPriority);
+    CFeeRate feeRate = GetBoncoinFeeRate(nPriority);
     if (feeRate <= CFeeRate(0)) // not enough data => minfee
     {
         ui->labelPriority->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(),
@@ -674,7 +674,7 @@ void SendCoinsDialog::updateFeeLabel()
         ui->labelPriority->setText(BitcoinUnits::formatWithUnit(model->getOptionsModel()->getDisplayUnit(),
                                                                 std::max(feeRate.GetFeePerK(), CWallet::GetRequiredFee(1000))) + "/kB");
         // ui->labelPriority2->hide();
-        // Bonkcoin: We don't use smart fees, so we don't have the data to estimate when it will get in
+        // Boncoin: We don't use smart fees, so we don't have the data to estimate when it will get in
         ui->labelFeeEstimation->setText("");
         // ui->labelFeeEstimation->setText(tr("Estimated to begin confirmation within %n block(s).", "", estimateFoundAtBlocks));
         ui->fallbackFeeWarningLabel->setVisible(false);
@@ -779,7 +779,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Bonkcoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Boncoin address"));
         }
         else // Valid address
         {

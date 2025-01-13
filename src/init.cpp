@@ -195,7 +195,7 @@ void Shutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("bonkcoin-shutoff");
+    RenameThread("boncoin-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -514,8 +514,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/Bonkcoin/Bonkcoin-core>";
-    const std::string URL_WEBSITE = "<https://bonkscoin.io>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/Boncoin/Boncoin-core>";
+    const std::string URL_WEBSITE = "<https://bonscoin.io>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2013, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -619,7 +619,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("bonkcoin-loadblk");
+    RenameThread("boncoin-loadblk");
 
     {
     CImportingNow imp;
@@ -797,7 +797,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Bonkcoin version %s\n", FormatFullVersion());
+    LogPrintf("Boncoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only
@@ -1704,7 +1704,7 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     // ********************************************************* Step 12: finished
 
-    // Bonkcoin: Do we need to do any RPC mining init here?
+    // Boncoin: Do we need to do any RPC mining init here?
 
     SetRPCWarmupFinished();
     uiInterface.InitMessage(_("Done loading"));

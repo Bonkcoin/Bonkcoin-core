@@ -1,6 +1,6 @@
 [Protocol]
-exec=bonkcoin-qt '%u'
-protocol=bonkcoin
+exec=boncoin-qt '%u'
+protocol=boncoin
 input=none
 output=none
 helper=true

@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>bonkcoin.icns</string>
+  <string>boncoin.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bonkcoin-Qt</string>
+  <string>Boncoin-Qt</string>
 
   <key>CFBundleName</key>
-  <string>Bonkcoin-Qt</string>
+  <string>Boncoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>com.bonkcoin.Bonkcoin-Qt</string>
+  <string>com.boncoin.Boncoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.bonkcoin.BonkcoinPayment</string>
+      <string>com.boncoin.BoncoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bonkcoin</string>
+        <string>boncoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.bonkcoin.paymentrequest</string>
+      <string>com.boncoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Bonkcoin payment request</string>
+      <string>Boncoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/bonkcoin-paymentrequest</string>
+        <string>application/boncoin-paymentrequest</string>
         <key>public.filename-extension</key>
         <array>
-          <string>bonkcoinpaymentrequest</string>
+          <string>boncoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.bonkcoin.paymentrequest</string>
+        <string>com.boncoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

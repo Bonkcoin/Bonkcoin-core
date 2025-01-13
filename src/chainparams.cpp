@@ -52,7 +52,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Bonkcoin meme mining cryptocurrency was born";
+    const char* pszTimestamp = "Boncoin meme mining cryptocurrency was born";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -80,7 +80,7 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
-        // BIP34 is never enforced in bonk v2 blocks, so we enforce from v3
+        // BIP34 is never enforced in bon v2 blocks, so we enforce from v3
         consensus.BIP34Height = 1000;
         consensus.BIP34Hash = uint256S("0xd6c923ba1b096044c36b4510167f3be116c2c92cdf1200020568eb69521f4364"); // block 1000
         consensus.BIP65Height = 1000;
@@ -100,7 +100,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to bonk values
+        // XXX: BIP heights and hashes all need to be updated to bon values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1462060800; // May 1st, 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
@@ -161,7 +161,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("bonkscoin.io", "dnsseed.bonkscoin.io"));
+        vSeeds.push_back(CDNSSeedData("bonscoin.io", "dnsseed.bonscoin.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25); // Addresses start with S
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,28);
@@ -207,7 +207,7 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 501;
         consensus.nMajorityRejectBlockOutdated = 750;
         consensus.nMajorityWindow = 1000;
-        // BIP34 is never enforced in Bonkcoin v2 blocks, so we enforce from v3
+        // BIP34 is never enforced in Boncoin v2 blocks, so we enforce from v3
         consensus.BIP34Height = 1000;
         consensus.BIP34Hash = uint256S("0x00");
         consensus.BIP65Height = 1000; // 
@@ -227,7 +227,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to Bonkcoin values
+        // XXX: BIP heights and hashes all need to be updated to Boncoin values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1456790400; // March 1st, 2016
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1493596800; // May 1st, 2017
@@ -315,8 +315,8 @@ public:
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        // vSeeds.push_back(CDNSSeedData("bonkscoin.io", "seeds-testnet.bonkscoin.io"));
-        // vSeeds.push_back(CDNSSeedData("bonkblocks.com", "seeds-testnet.bonkblocks.com"));
+        // vSeeds.push_back(CDNSSeedData("bonscoin.io", "seeds-testnet.bonscoin.io"));
+        // vSeeds.push_back(CDNSSeedData("bonblocks.com", "seeds-testnet.bonblocks.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,113); // 0x71
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); // 0xc4
@@ -388,7 +388,7 @@ public:
         consensus.fStrictChainId = true;
         consensus.fAllowLegacyBlocks = true;
 
-        // Bonkcoin parameters
+        // Boncoin parameters
         consensus.fSimplifiedRewards = true;
         consensus.nCoinbaseMaturity = 60; // For easier testability in RPC tests
 

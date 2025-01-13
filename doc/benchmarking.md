@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Bonkcoin Core has an internal benchmarking framework, with benchmarks
+Boncoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling bonkcoin-core, the benchmarks can be run with:
-`src/bench/bench_bonkcoin`
+After compiling boncoin-core, the benchmarks can be run with:
+`src/bench/bench_boncoin`
 
 The output will look similar to:
 ```

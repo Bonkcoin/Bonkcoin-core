@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  bonkcoind The bonkcoin core server.
+#  boncoind The boncoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: bonkcoind
-# processname: bonkcoind
+# description: boncoind
+# processname: boncoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bonkcoind, see below
-if [ -f /etc/sysconfig/bonkcoind ]; then
-        . /etc/sysconfig/bonkcoind
+# you can override defaults in /etc/sysconfig/boncoind, see below
+if [ -f /etc/sysconfig/boncoind ]; then
+        . /etc/sysconfig/boncoind
 fi
 
 RETVAL=0
 
-prog=bonkcoind
-# you can override the lockfile via BONKCOIND_LOCKFILE in /etc/sysconfig/bonkcoind
-lockfile=${BONKCOIND_LOCKFILE-/var/lock/subsys/bonkcoind}
+prog=boncoind
+# you can override the lockfile via BONCOIND_LOCKFILE in /etc/sysconfig/boncoind
+lockfile=${BONCOIND_LOCKFILE-/var/lock/subsys/boncoind}
 
-# bonkcoind defaults to /usr/bin/bonkcoind, override with BONKCOIND_BIN
-bonkcoind=${BONKCOIND_BIN-/usr/bin/bonkcoind}
+# boncoind defaults to /usr/bin/boncoind, override with BONCOIND_BIN
+boncoind=${BONCOIND_BIN-/usr/bin/boncoind}
 
-# bonkcoind opts default to -disablewallet, override with BONKCOIND_OPTS
-bonkcoind_opts=${BONKCOIND_OPTS--disablewallet}
+# boncoind opts default to -disablewallet, override with BONCOIND_OPTS
+boncoind_opts=${BONCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bonkcoind $bonkcoind_opts
+    daemon $DAEMONOPTS $boncoind $boncoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

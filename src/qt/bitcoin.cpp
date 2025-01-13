@@ -315,7 +315,7 @@ void BitcoinCore::shutdown()
 }
 
 static int qt_argc = 1;
-static const char* qt_argv = "bonkcoin-qt";
+static const char* qt_argv = "boncoin-qt";
 
 BitcoinApplication::BitcoinApplication():
     QApplication(qt_argc, const_cast<char **>(&qt_argv)),
@@ -526,7 +526,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, BitcoinGUI::tr("Runaway exception"), BitcoinGUI::tr("A fatal error occurred. Bonkcoin can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, BitcoinGUI::tr("Runaway exception"), BitcoinGUI::tr("A fatal error occurred. Boncoin can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 

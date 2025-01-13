@@ -1,4 +1,4 @@
-The following is a list of assets used in the bonkcoin source and their proper attribution.
+The following is a list of assets used in the boncoin source and their proper attribution.
 
 [Typicons/Stephen Hutchings](http://typicons.com)
 -----------------------
@@ -47,9 +47,9 @@ Other
 ### Assets Used
     src/qt/res/icons/about.png
     src/qt/res/icons/about_qt.png,
-    src/qt/res/icons/bonkcoin.icns
-    src/qt/res/icons/bonkcoin.ico,
-    src/qt/res/icons/bonkcoin.png
+    src/qt/res/icons/boncoin.icns
+    src/qt/res/icons/boncoin.ico,
+    src/qt/res/icons/boncoin.png
     src/qt/res/icons/clock*.png,
     src/qt/res/icons/connect*.png
     src/qt/res/icons/eye_minus.png,

@@ -5,12 +5,12 @@ Arch Linux build guide
 **Test date:** 2022/07/15
 
 This example lists the steps necessary to setup and build a command line only
-bonkcoind on archlinux:
+boncoind on archlinux:
 
 ```sh
 pacman -S git base-devel boost libevent python db
-git clone https://github.com/Bonkcoin/bonkcoin.git
-cd bonkcoin/
+git clone https://github.com/Boncoin/boncoin.git
+cd boncoin/
 ./autogen.sh
 ./configure --without-gui --without-miniupnpc
 make
