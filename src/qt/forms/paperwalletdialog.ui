@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Print Your Paper Wallets</string>
+   <string>Print paper wallets</string>
   </property>
   <widget class="QLabel" name="privateKeyQRCode">
    <property name="geometry">
@@ -180,7 +180,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Many Wallets?</string>
+    <string>Number of wallets</string>
    </property>
   </widget>
   <widget class="QComboBox" name="walletCount">
