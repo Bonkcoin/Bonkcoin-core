@@ -246,12 +246,12 @@ UniValue getcoincount(const JSONRPCRequest& request)
 
     CAmount total = 0;
 
-    total += calculate_over(&height, 600000,  10000);
-    total += calculate_over(&height, 500000,  15625);
-    total += calculate_over(&height, 400000,  31250);
-    total += calculate_over(&height, 300000,  62500);
-    total += calculate_over(&height, 200000, 125000);
-    total += calculate_over(&height, 100000, 250000);
+    total += calculate_over(&height, 300000,  10000);
+    total += calculate_over(&height, 250000,  15625);
+    total += calculate_over(&height, 200000,  31250);
+    total += calculate_over(&height, 150000,  62500);
+    total += calculate_over(&height, 100000, 125000);
+    total += calculate_over(&height, 50000,  250000);
     total += calculate_over(&height, 000000, 500000);
 
     return total;
@@ -1890,7 +1890,6 @@ static const CRPCCommand commands[] =
     { "blockchain",         "pruneblockchain",        &pruneblockchain,        true,  {"height"} },
     { "blockchain",         "verifychain",            &verifychain,            true,  {"checklevel","nblocks"} },
     { "blockchain",         "getcoincount",           &getcoincount,           true,  {"height"} },
-
     { "blockchain",         "preciousblock",          &preciousblock,          true,  {"blockhash"} },
 
     /* Not shown in help */

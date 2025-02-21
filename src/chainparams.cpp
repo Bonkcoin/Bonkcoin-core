@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Copyright (c) 2022 The Dogecoin Core developers
+// Copyright (c) 2023-2024 The Pepecoin Core developers
 // Copyright (c) 2024-2025 The Bonkcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -112,9 +113,9 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-	    consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000122335cfbccdc9b8b"); // 30000
+	    consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000021348052196cacac73"); // 60000
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xa65abe66fa44d375f71bc80fe2d98024261d4e2c1e61f40d6ce627c7971523b5"); // 30000
+        consensus.defaultAssumeValid = uint256S("0x284490be01e1d2f531baee3d7b84ae716f6f83aed21a35d2cbdd066a0a24ce4b"); // 60000
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0094; // 148
@@ -158,13 +159,13 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x0bb0f2e668c363e321c208d756d3a4bde76e82e45e76d00538c3e9b05389f5ed"));
-        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0bb0f2e668c363e321c208d756d3a4bde76e82e45e76d00538c3e9b05389f5ed")); // Hash of the network genesis block mainnet
+        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b")); // markle hash of the network genesis block mainnet
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("bonkscoin.io", "dnsseed.bonkscoin.io"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25); // Addresses start with S
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,25); // Addresses start with B
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,28);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,151);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0xfa)(0xda)(0xfe).convert_to_container<std::vector<unsigned char> >();
@@ -179,7 +180,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x0bb0f2e668c363e321c208d756d3a4bde76e82e45e76d00538c3e9b05389f5ed"))
+            ( 0, uint256S("0x0bb0f2e668c363e321c208d756d3a4bde76e82e45e76d00538c3e9b05389f5ed")) // Hash of the network genesis block mainnet
             ( 1000, uint256S("0xd6c923ba1b096044c36b4510167f3be116c2c92cdf1200020568eb69521f4364"))
             ( 3000, uint256S("0x1ffb4edd1aa7ef0082bff3fc728c1df35db83ace7987ac88263c5e345c86c76b"))
             ( 5000, uint256S("0x6e65e4c06e91ee5d14b7dc28d28dffe61e0772e6321119383c4451807092463a"))
@@ -187,6 +188,7 @@ public:
             ( 10000, uint256S("0xefa7a5149e3de58893dd9a13d591b9a0f05fe612ef13475b5f18b599bcddea31"))
             ( 20000, uint256S("0x5a06ceffe745f7d75723801dfe25ccf15584ccd34c9a6169119f9808e870359a"))
             ( 30000, uint256S("0xa65abe66fa44d375f71bc80fe2d98024261d4e2c1e61f40d6ce627c7971523b5"))
+            ( 60000, uint256S("0x284490be01e1d2f531baee3d7b84ae716f6f83aed21a35d2cbdd066a0a24ce4b"))
         };
 
         chainTxData = ChainTxData{ };
@@ -206,7 +208,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
-        consensus.nSubsidyHalvingInterval = 100000;
+        consensus.nSubsidyHalvingInterval = 50000;
         consensus.nMajorityEnforceBlockUpgrade = 501;
         consensus.nMajorityRejectBlockOutdated = 750;
         consensus.nMajorityWindow = 1000;
@@ -241,10 +243,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000004813725c089e"); // 87222
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000000010001"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("b463889d9777c58014bb152ba72cd7369d58c105ca58fe7234764fd9dafc154a"); // 42001
+        consensus.defaultAssumeValid = uint256S("b463889d9777c58014bb152ba72cd7369d58c105ca58fe7234764fd9dafc154a"); // 0
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x003f; // 63
@@ -292,29 +294,32 @@ public:
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
+
+        // should i disable this?
         // calculate main genesis block
         // consensus.hashGenesisBlock = uint256S("0x00");
         if (true && (genesis.GetHash() != consensus.hashGenesisBlock)) {
-		std::cout << std::string("Calculating main genesis block...\n");
-            arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-            uint256 hash;
-            genesis.nNonce = 0;
-            while (UintToArith256(genesis.GetHash()) > hashTarget)
-            {
-                ++genesis.nNonce;
-                if (genesis.nNonce == 0)
+            std::cout << std::string("Calculating main genesis block...\n");
+                arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
+                uint256 hash;
+                genesis.nNonce = 0;
+                while (UintToArith256(genesis.GetHash()) > hashTarget)
                 {
-                    ++genesis.nTime;
+                    ++genesis.nNonce;
+                    if (genesis.nNonce == 0)
+                    {
+                        ++genesis.nTime;
+                    }
                 }
+                std::cout << "Genesis block found!\n";
+                std::cout << "nonce: " << genesis.nNonce << "\n";
+                std::cout << "time: " << genesis.nTime << "\n";
+                std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
+                std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
             }
-            std::cout << "Genesis block found!\n";
-            std::cout << "nonce: " << genesis.nNonce << "\n";
-            std::cout << "time: " << genesis.nTime << "\n";
-            std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
-            std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
-        }
+
         assert(consensus.hashGenesisBlock == uint256S("0xb463889d9777c58014bb152ba72cd7369d58c105ca58fe7234764fd9dafc154a"));
-        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b")); // markle hash of the network genesis block 
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
@@ -381,10 +386,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 999999999999ULL;
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00");
+        consensus.nMinimumChainWork = uint256S("0x00"); // test 0 block ("0000000000000000000000000000000000000000000000000000000000000002")
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00");
+        consensus.defaultAssumeValid = uint256S("0x00"); // test 0 block ("0x407124744afb4224c67737340d786a1e6879f4e0431338605702b7f813b6faf9")
 
         // AuxPow parameters
         consensus.nAuxpowChainId = 0x003f; // 63
@@ -421,30 +426,32 @@ public:
         
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        //MineGenesis(genesis, consensus.powLimit, true);
+
+        // Mine Genesis(genesis, consensus.powLimit, true);
         // calculate main genesis block
         // consensus.hashGenesisBlock = uint256S("0x00");
         if (true && (genesis.GetHash() != consensus.hashGenesisBlock)) {
-		std::cout << std::string("Calculating main genesis block...\n");
-            arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-            uint256 hash;
-            genesis.nNonce = 0;
-            while (UintToArith256(genesis.GetHash()) > hashTarget)
-            {
-                ++genesis.nNonce;
-                if (genesis.nNonce == 0)
+            std::cout << std::string("Calculating main genesis block...\n");
+                arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
+                uint256 hash;
+                genesis.nNonce = 0;
+                while (UintToArith256(genesis.GetHash()) > hashTarget)
                 {
-                    ++genesis.nTime;
+                    ++genesis.nNonce;
+                    if (genesis.nNonce == 0)
+                    {
+                        ++genesis.nTime;
+                    }
                 }
+                std::cout << "Genesis block found!\n";
+                std::cout << "nonce: " << genesis.nNonce << "\n";
+                std::cout << "time: " << genesis.nTime << "\n";
+                std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
+                std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
             }
-            std::cout << "Genesis block found!\n";
-            std::cout << "nonce: " << genesis.nNonce << "\n";
-            std::cout << "time: " << genesis.nTime << "\n";
-            std::cout << "blockhash: " << genesis.GetHash().ToString().c_str() << "\n";
-            std::cout << "merklehash: " << genesis.hashMerkleRoot.ToString().c_str() << "\n";
-        }
+
         assert(consensus.hashGenesisBlock == uint256S("0x407124744afb4224c67737340d786a1e6879f4e0431338605702b7f813b6faf9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x3ea754d80173ccb0f19377e9a98d41e7d597dd77ce827b121f655a421216592b")); // markle hash of the network genesis block
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.

@@ -1,11 +1,12 @@
 <h1 align="center">
 <img src="https://i.imgur.com/d9a8NfA.png" alt="Bonkcoin" width="300"/>
 <br/><br/>
-Bonkcoin Core [BONC]
+Bonkcoin Core [BONC, B]
 </h1>
 
+Select language: EN | [CN](./README_zh_CN.md) | [PT](./README_pt_BR.md) | [FA](./README_fa_IR.md) | [VI](./README_vi_VN.md) | [FR](./README_fr_FR.md) | [JA](./README_ja_JP.md) | [DE](./README_de_DE.md)
 
-BonkCoin introduces an innovative world of meme-inspired cryptocurrency, blending humor with blockchain technology. It is created to bring joy, entertainment, and interaction to the crypto community. Operating on a decentralized, community-focused ecosystem, BonkCoin seeks to merge the excitement of memes with the advancements of blockchain.
+Bonkcoin is a community focused cryptocurrency created by one of the original Dogecoin shibes from 2013. It was created for one purpose, to create a new and fun community just like the original Dogecoin community.
 
 Unlike all iterations before it, Bonkcoin is a layer 1 coin. This means there are no liquidity pools to drain, no blacklisting wallets, and no confusing smart contracts. Bonkcoin is a simple blockchain.
 
@@ -154,7 +155,6 @@ Here are some places to visit:
 
 
 * [Discord](https://discord.gg/rqtkgwsk6j)
-* [Website](https://bonkscoin.io/)
 * [Telegram](https://t.me/bonkscoin)
 * [X](https://x.com/bonkcoinpow)
 

@@ -4,6 +4,12 @@ $(package)_download_path=http://www.zlib.net
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
 $(package)_sha256_hash=9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23
 
+# keep this disable incase you want to use older version
+# $(package)_version=1.3
+# $(package)_download_path=http://www.zlib.net
+# $(package)_file_name=$(package)-$($(package)_version).tar.gz
+# $(package)_sha256_hash=ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e
+
 define $(package)_set_vars
 $(package)_build_opts= CC="$($(package)_cc)"
 $(package)_build_opts+=CFLAGS="$($(package)_cflags) $($(package)_cppflags) -fPIC"

@@ -88,7 +88,7 @@ Private keys are stored in the `wallet.dat` file. You can use `backupwallet` to 
 satoshi:~$ bonkcoin-cli backupwallet /path/of/wallet/backup
 ```
 
-**Tip:** Bonkcoin addresses start with the letter `P`.
+**Tip:** Bonkcoin addresses start with the letter `B`.
 
 You now have two wallet addresses to share with other people to receive BONC! Consider avoiding [address reuse](https://en.bitcoin.it/wiki/Address_reuse) for anonymity and security reasons.
 
@@ -155,7 +155,7 @@ satoshi:~$ bonkcoin-cli listunspent 1 9999999 '["nnJDY1xCRgWQc7vBXHUPMPsEynuZW23
 
 The `minconf` and `maxconf` parameters filter the minimum and maximum number of [confirmations](https://www.pcmag.com/encyclopedia/term/bitcoin-confirmation) of the UTXO returned.
 
-> **Note:** The example address starts with `n` instead of `P`, because it uses [testnet](#mainnet-testnet-and-regtest).
+> **Note:** The example address starts with `n` instead of `B`, because it uses [testnet](#mainnet-testnet-and-regtest).
 
 ##### createrawtransaction
 

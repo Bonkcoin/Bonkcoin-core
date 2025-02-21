@@ -19,11 +19,11 @@ import random
 from binascii import b2a_hex
 
 # key types
-PUBKEY_ADDRESS = 56
-SCRIPT_ADDRESS = 22
+PUBKEY_ADDRESS = 25
+SCRIPT_ADDRESS = 28
 PUBKEY_ADDRESS_TEST = 113
 SCRIPT_ADDRESS_TEST = 196
-PRIVKEY = 158
+PRIVKEY = 151
 PRIVKEY_TEST = 241
 
 metadata_keys = ['isPrivkey', 'isTestnet', 'addrType', 'isCompressed']
@@ -47,8 +47,8 @@ def is_valid(v):
     if result is None:
         return False
     for template in templates:
-        prefix = str(bytearray(template[0]))
-        suffix = str(bytearray(template[2]))
+        prefix = bytes(template[0])  # Ensure prefix is bytes
+        suffix = bytes(template[2])  # Ensure suffix is bytes
         if result.startswith(prefix) and result.endswith(suffix):
             if (len(result) - len(prefix) - len(suffix)) == template[1]:
                 return True
@@ -58,20 +58,22 @@ def gen_valid_vectors():
     '''Generate valid test vectors'''
     while True:
         for template in templates:
-            prefix = str(bytearray(template[0]))
+            prefix = bytes(template[0])  # Convert to bytes
             payload = os.urandom(template[1]) 
-            suffix = str(bytearray(template[2]))
+            suffix = bytes(template[2])  # Convert to bytes
             rv = b58encode_chk(prefix + payload + suffix)
             assert is_valid(rv)
-            metadata = dict([(x,y) for (x,y) in zip(metadata_keys,template[3]) if y is not None])
-            yield (rv, b2a_hex(payload), metadata)
+            metadata = dict([(x, y) for (x, y) in zip(metadata_keys, template[3]) if y is not None])
+            
+            # Convert bytes (payload) to hex string for JSON serialization
+            yield (rv, b2a_hex(payload).decode('utf-8'), metadata)
 
 def gen_invalid_vector(template, corrupt_prefix, randomize_payload_size, corrupt_suffix):
     '''Generate possibly invalid vector'''
     if corrupt_prefix:
         prefix = os.urandom(1)
     else:
-        prefix = str(bytearray(template[0]))
+        prefix = bytes(template[0])  # Ensure prefix is bytes
     
     if randomize_payload_size:
         payload = os.urandom(max(int(random.expovariate(0.5)), 50))
@@ -81,7 +83,7 @@ def gen_invalid_vector(template, corrupt_prefix, randomize_payload_size, corrupt
     if corrupt_suffix:
         suffix = os.urandom(len(template[2]))
     else:
-        suffix = str(bytearray(template[2]))
+        suffix = bytes(template[2])  # Ensure suffix is bytes
 
     return b58encode_chk(prefix + payload + suffix)
 

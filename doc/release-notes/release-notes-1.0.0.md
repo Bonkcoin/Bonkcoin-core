@@ -8,10 +8,11 @@
     | :------- | ------: | ------: | ------: |
     | P2P      |   14327 |   44874 |   18444 |
     | RPC      |   15612 |   44873 |   18332 |
+    
 * Set AuxPow ChainID to `63`.
 * Remove occurances of Dogecoin and replace with Bonkcoin where appropriate.
-* All Bonkcoin addresses now start with the letter `P`. All other address prefixes Dogecoin uses will be adopted by Bonkcoin for familiarity purposes.
-* Update `PUBKEY_ADDRESS` from `30` to `56` (Address prefixes start with `P` instead of `D`). Update `base58_keys_valid.json` and `base58_keys_invalid.json` with `gen_base58_test_vectors.py`
+* All Bonkcoin addresses now start with the letter `B`. All other address prefixes Dogecoin uses will be adopted by Bonkcoin for familiarity purposes.
+* Update `PUBKEY_ADDRESS` from `30` to `25` (Address prefixes start with `B` instead of `D`). Update `base58_keys_valid.json` and `base58_keys_invalid.json` with `gen_base58_test_vectors.py`
 * Update `key_tests.cpp` with new Bonkcoin addresses to resolve test failures.
 * Resolve test failures in `key_tests.cpp`
 * Resolve test failures in `bctest.py`
@@ -55,7 +56,7 @@
 * Change ticker symbol from `PPC` to `BONC` in `readme.md`, man pages, and `amount.cpp`
 * Update `assets-attribution.md`
 * Update `gen-manpages.sh` to target the bash shell
-* Update readme files to correct urls and Pepe icon/text. Remove references to Bonkcoin in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
+* Update readme files to correct urls and Bonc icon/text. Remove references to Bonkcoin in the Dogecoin release notes. Move Dogecoin release notes to new `release-notes/dogecoin` folder.
 * Add link to official community Discord
 * Update `FAQ.md` to reflect Bonkcoin changes
 * Update `README_windows.txt` to point to the Dogecoin wiki (The wiki for Dogecoin is a good guide for Bonkcoin as well)

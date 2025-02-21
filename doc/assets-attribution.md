@@ -65,5 +65,6 @@ Other
     src/qt/res/src/tx*.svg,
     src/qt/res/src/verify.svg
 
-
-Pepe created by Matt Furie
+# credit to 
+# Pepe created by Matt Furie
+Bonc created by Bonkcoin Team

@@ -4,6 +4,12 @@ $(package)_download_path=https://archives.boost.io/release/1.71.0/source/
 $(package)_file_name=$(package)_$($(package)_version).tar.bz2
 $(package)_sha256_hash=d73a8da01e8bf8c7eda40b4c84915071a8c8a0df4a6734537ddde4a8580524ee
 
+# incase need to lower boost version for older os
+# $(package)_version=1_63_0
+# $(package)_download_path=https://sourceforge.net/projects/boost/files/boost/1.63.0
+# $(package)_file_name=$(package)_$($(package)_version).tar.bz2
+# $(package)_sha256_hash=beae2529f759f6b3bf3f4969a19c2e9d6f0c503edcb2de4a61d1428519fcb3b0
+
 define $(package)_set_vars
 $(package)_config_opts_release=variant=release
 $(package)_config_opts_debug=variant=debug

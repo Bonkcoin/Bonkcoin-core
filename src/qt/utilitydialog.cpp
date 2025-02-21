@@ -437,7 +437,7 @@ void PaperWalletDialog::on_printButton_clicked()
             prepareStatus = this->model->prepareTransaction(*tx);
 
         if (prepareStatus.status == WalletModel::InvalidAddress) {
-            QMessageBox::critical(this, tr("Send Coins"), tr("The recipient address is not valid, please recheck."), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::critical(this, tr("Send Coins"), tr("The recipient address is invalid, please recheck."), QMessageBox::Ok, QMessageBox::Ok);
         } else if (prepareStatus.status == WalletModel::InvalidAmount) {
             QMessageBox::critical(this, tr("Send Coins"), tr("The amount to pay must be larger than 0"), QMessageBox::Ok, QMessageBox::Ok);
         } else if (prepareStatus.status == WalletModel::AmountExceedsBalance) {

@@ -6,7 +6,6 @@ or look for work that needs doing, please see:
 
 * [Help requests](https://github.com/Bonkcoin/Bonkcoin-core/labels/help%20wanted)
 * [Projects](https://github.com/Bonkcoin/Bonkcoin-core/projects)
-* [Bonkcoindev on reddit](https://www.reddit.com/r/bonkcoindev/)
 
 ## Branch Strategy
 
