@@ -142,7 +142,7 @@ public:
         nDeveloperFee = 15;
 
         // This is the block height when the devfee starts working
-        nDeveloperFeeStart = 100000;
+        nDeveloperFeeStart = 100500;
 
         // Developer wallet address
         strDeveloperFeeAddress = "B5JsYYsjnbFYHDrpibAStTEGpxyZrPBVr3";
