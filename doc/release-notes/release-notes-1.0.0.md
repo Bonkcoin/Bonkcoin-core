@@ -6,8 +6,8 @@
 
     | Function | mainnet | testnet | regtest |
     | :------- | ------: | ------: | ------: |
-    | P2P      |   14327 |   44874 |   18444 |
-    | RPC      |   15612 |   44873 |   18332 |
+    | P2P      |   14327 |   14328 |   14329 |
+    | RPC      |   15612 |   15613 |   15614 |
     
 * Set AuxPow ChainID to `63`.
 * Remove occurances of Dogecoin and replace with Bonkcoin where appropriate.

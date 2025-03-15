@@ -41,8 +41,8 @@ Il est fortement recommandé de ne pas exposer les ports RPC à l'internet publi
 
 | Fonction | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
-| P2P      |   14327 |   44874 |   18444 |
-| RPC      |   15612 |   44873 |   18332 |
+| P2P      |   14327 |   14328 |   14329 |
+| RPC      |   15612 |   15613 |   15614 |
 
 ## Développement en cours 💻
 

@@ -138,6 +138,15 @@ public:
         auxpowConsensus.nHeightEffective = 42000;
         auxpowConsensus.fAllowLegacyBlocks = false;
 
+        // 15% of Block reward to operations wallet
+        nDeveloperFee = 15;
+
+        // This is the block height when the devfee starts working
+        nDeveloperFeeStart = 100000;
+
+        // Developer wallet address
+        strDeveloperFeeAddress = "B5JsYYsjnbFYHDrpibAStTEGpxyZrPBVr3";
+        
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
         digishieldConsensus.pLeft = &consensus;
@@ -243,10 +252,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // Disabled
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000000010001"); // 0
+        consensus.nMinimumChainWork = uint256S("0000000000000000000000000000000000000000000000000000000000100010"); // 0
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("b463889d9777c58014bb152ba72cd7369d58c105ca58fe7234764fd9dafc154a"); // 0
+        consensus.defaultAssumeValid = uint256S("0xb463889d9777c58014bb152ba72cd7369d58c105ca58fe7234764fd9dafc154a"); // 0
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x003f; // 63
@@ -282,12 +291,12 @@ public:
         digishieldConsensus.pRight = &minDifficultyConsensus;
         minDifficultyConsensus.pRight = &auxpowConsensus;
 
-        pchMessageStart[0] = 0xfe;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xdb;
-        pchMessageStart[3] = 0xcc;
-        nDefaultPort = 44874;
-        nPruneAfterHeight = 1000;
+        pchMessageStart[0] = 0xaf; // Or any other value not used by other networks
+        pchMessageStart[1] = 0x12;
+        pchMessageStart[2] = 0x34;
+        pchMessageStart[3] = 0x56;        
+        nDefaultPort = 14328;
+        nPruneAfterHeight = 10000;
 
         genesis = CreateGenesisBlock(1735579499, 473886, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -332,7 +341,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xcf).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
+        // vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
@@ -418,7 +427,7 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nDefaultPort = 18444;
+        nDefaultPort = 14329;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1735579767, 1, 0x207fffff, 1, 50 * COIN);

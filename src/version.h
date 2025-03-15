@@ -47,13 +47,17 @@ static const int AUXPOW_BEFORE_100K_VERSION = 70016;
 //      to  reduce to 70016
 //! disconnect from peers older than this proto version
 //! bump this to 70017 to block older peers
-static const int MIN_PEER_PROTO_VERSION = 70016;
+//! bumped this to 70017 on March 15 2025
+static const int MIN_PEER_PROTO_VERSION = 70017;
 
 //! new halving change starts with this version
 static const int HALVING_CHANGES_VERSION = 70017;
 
+//! add dev fee starts with this version
+static const int ADD_DEVELOPER_FEE_VERSION = 70018;
+
 //! current protocol version
 //! roll back to 70016 if somethings goes wrong
-static const int PROTOCOL_VERSION = HALVING_CHANGES_VERSION;
+static const int PROTOCOL_VERSION = ADD_DEVELOPER_FEE_VERSION;
 
 #endif // BITCOIN_VERSION_H

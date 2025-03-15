@@ -43,7 +43,7 @@ config file):
 
 	HiddenServiceDir /var/lib/tor/bonkcoin-service/
 	HiddenServicePort 14327 127.0.0.1:14327
-	HiddenServicePort 44874 127.0.0.1:44874
+	HiddenServicePort 14328 127.0.0.1:14328
 
 The directory can be different of course, but (both) port numbers should be equal to
 your bonkcoind's P2P listen port (14327 by default).

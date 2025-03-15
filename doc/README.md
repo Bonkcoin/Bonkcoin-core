@@ -1,4 +1,4 @@
-Bonkcoin Core 1.3.1
+Bonkcoin Core 1.4.0
 =====================
 
 Development

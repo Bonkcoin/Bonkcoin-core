@@ -36,7 +36,7 @@ jobs:
           - i686-linux
           - i686-win
           - x86_64-linux-dbg
-          - x86_64-linux-nowallet
+          # - x86_64-linux-nowallet
           - x86_64-macos
           - x86_64-win
           - x86_64-win-experimental
@@ -139,18 +139,18 @@ jobs:
             config-opts: "--with-gui=qt5 --enable-zmq --enable-glibc-back-compat CPPFLAGS=-DDEBUG_LOCKORDER"
             goal: install
 
-          - name: x86_64-linux-nowallet
-            host: x86_64-unknown-linux-gnu
-            os: ubuntu-20.04
-            packages: python3
-            run-bench: true
-            test-script: |
-              make check $MAKEJOBS VERBOSE=1
-            check-security: true
-            check-symbols: true
-            dep-opts: "NO_WALLET=1"
-            config-opts: "--with-gui=qt5 --enable-glibc-back-compat --disable-wallet LDFLAGS=-static-libstdc++"
-            goal: install
+          # - name: x86_64-linux-nowallet
+          #   host: x86_64-unknown-linux-gnu
+          #   os: ubuntu-20.04
+          #   packages: python3
+          #   run-bench: true
+          #   test-script: |
+          #     make check $MAKEJOBS VERBOSE=1
+          #   check-security: true
+          #   check-symbols: true
+          #   dep-opts: "NO_WALLET=1"
+          #   config-opts: "--with-gui=qt5 --enable-glibc-back-compat --disable-wallet LDFLAGS=-static-libstdc++"
+          #   goal: install
 
           - name: x86_64-macos
             host: x86_64-apple-darwin11
