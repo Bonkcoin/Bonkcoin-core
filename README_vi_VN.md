@@ -39,8 +39,8 @@ Nhân Tố Bonkcoin mặc định sử dụng cổng `14327` cho giao tiếp nga
 
 | Chức năng | mainnet | testnet | regtest |
 | :------- | ------: | ------: | ------: |
-| P2P      |   14327 |   44874 |   18444 |
-| RPC      |   15612 |   44873 |   18332 |
+| P2P      |   14327 |   14328 |   14329 |
+| RPC      |   15612 |   15613 |   15614 |
 
 ## Phát Triển Liên Tục 💻
 

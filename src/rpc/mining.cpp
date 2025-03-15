@@ -410,6 +410,8 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
             "      \"flags\" : \"xx\"                  (string) key name is to be ignored, and value included in scriptSig\n"
             "  },\n"
             "  \"coinbasevalue\" : n,              (numeric) maximum allowable input to coinbase transaction, including the generation award and transaction fees (in Satoshis)\n"
+            "  \"DeveloperFeeAddress\" : n,         (string) Developer Fee Address\n"
+            "  \"DeveloperFeeAmount\" : n,          (numeric) Developer Fee Value, 15% of the coinbase\n"
             "  \"coinbasetxn\" : { ... },          (json object) information for coinbase transaction\n"
             "  \"target\" : \"xxxx\",                (string) The hash target\n"
             "  \"mintime\" : xxx,                  (numeric) The minimum timestamp appropriate for next block time in seconds since epoch (Jan 1 1970 GMT)\n"
@@ -715,6 +717,16 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
     result.pushKV("transactions", transactions);
     result.pushKV("coinbaseaux", aux);
     result.pushKV("coinbasevalue", (int64_t)pblock->vtx[0]->vout[0].nValue);
+
+    CAmount nDeveloperFeeStart = Params().DeveloperFeeStart();
+    if(pindexPrev->nHeight+1 >= nDeveloperFeeStart) {
+    result.pushKV("DeveloperFeeAddress", Params().DeveloperFeeAddress());
+    result.pushKV("DeveloperFeeAmount", (int64_t)pblock->vtx[0]->vout[1].nValue);
+    } else {
+        result.pushKV("DeveloperFeeAddress", "Developer Fee Not Activated");
+        result.pushKV("DeveloperFeeAmount", "Developer Fee Not Activated");
+    }
+
     result.pushKV("longpollid", chainActive.Tip()->GetBlockHash().GetHex() + i64tostr(nTransactionsUpdatedLast));
     result.pushKV("target", hashTarget.GetHex());
     result.pushKV("mintime", (int64_t)pindexPrev->GetMedianTimePast()+1);

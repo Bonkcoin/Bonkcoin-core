@@ -7,6 +7,7 @@
 #include "miner.h"
 
 #include "amount.h"
+#include "base58.h"
 #include "chain.h"
 #include "chainparams.h"
 #include "coins.h"
@@ -26,6 +27,7 @@
 #include "util.h"
 #include "utilmoneystr.h"
 #include "validationinterface.h"
+#include "wallet/wallet.h"
 
 #include <algorithm>
 #include <boost/thread.hpp>
@@ -191,10 +193,56 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
     CMutableTransaction coinbaseTx;
     coinbaseTx.vin.resize(1);
     coinbaseTx.vin[0].prevout.SetNull();
-    coinbaseTx.vout.resize(1);
+
+    // Assign subsidy and fees
+    CAmount nSubsidy = GetBonkcoinBlockSubsidy(nHeight, consensus, pindexPrev->GetBlockHash());
+
+    CAmount nDeveloperFeeStart = Params().DeveloperFeeStart();
+    CAmount nDeveloperFeeAmount = 0;
+    CAmount nDeveloperFeeAmountValue = 0;
+
+    // Only calculate the developer fee if block height is greater than or equal to nDeveloperFeeStart
+    if (nHeight >= nDeveloperFeeStart) {
+        nDeveloperFeeAmount = Params().DeveloperFee();
+        nDeveloperFeeAmountValue = nSubsidy * nDeveloperFeeAmount / 100;
+    }
+
+    // Resize outputs correctly
+    coinbaseTx.vout.resize(nHeight >= nDeveloperFeeStart ? 2 : 1);
     coinbaseTx.vout[0].scriptPubKey = scriptPubKeyIn;
-    coinbaseTx.vout[0].nValue = nFees + GetBonkcoinBlockSubsidy(nHeight, consensus, pindexPrev->GetBlockHash(
-));
+    coinbaseTx.vout[0].nValue = nFees + (nSubsidy - nDeveloperFeeAmountValue);
+
+    // Assign the developer fee output only if nDeveloperFeeAmountValue > 0
+    if (nHeight >= nDeveloperFeeStart && nDeveloperFeeAmountValue > 0) {
+        std::string GetDeveloperFeeAddress = Params().DeveloperFeeAddress();
+        CTxDestination destDeveloperFeeAddress = DecodeDestination(GetDeveloperFeeAddress);
+
+        if (!IsValidDestination(destDeveloperFeeAddress)) {
+            LogPrintf("IsValidDestination: Invalid Bonc address %s \n", GetDeveloperFeeAddress);
+        }
+
+        // Ensure scriptPubKey is correctly assigned
+        CScript scriptPubKeyDeveloperFeeAddress = GetScriptForDestination(destDeveloperFeeAddress);
+
+        // Check if scriptPubKey conversion was successful
+        if (scriptPubKeyDeveloperFeeAddress.empty()) {
+            throw std::runtime_error("Error: scriptPubKeyDeveloperFeeAddress is empty.");
+        }
+
+        coinbaseTx.vout[1].scriptPubKey = scriptPubKeyDeveloperFeeAddress;
+        coinbaseTx.vout[1].nValue = nDeveloperFeeAmountValue;
+        // Debugging output
+        LogPrintf("nSubsidy: ====================================================\n");
+        LogPrintf("GetDeveloperFeeAddress: %s \n", GetDeveloperFeeAddress);
+        LogPrintf("scriptPubKeyDeveloperFeeAddress: %s \n", HexStr(scriptPubKeyDeveloperFeeAddress));
+        LogPrintf("nExpectedAmountValue: %ld \n", coinbaseTx.vout[1].nValue);
+    }
+
+    // Debugging output
+    LogPrintf("Miner: %ld \n", coinbaseTx.vout[0].nValue);
+    LogPrintf("scriptPubKeyIn: %s \n", HexStr(scriptPubKeyIn));
+    LogPrintf("nDeveloperFeeStart Block: %s \n", nDeveloperFeeStart);
+
     coinbaseTx.vin[0].scriptSig = CScript() << nHeight << OP_0;
     pblock->vtx[0] = MakeTransactionRef(std::move(coinbaseTx));
     pblocktemplate->vchCoinbaseCommitment = GenerateCoinbaseCommitment(*pblock, pindexPrev, consensus);
@@ -204,10 +252,10 @@ std::unique_ptr<CBlockTemplate> BlockAssembler::CreateNewBlock(const CScript& sc
     LogPrintf("CreateNewBlock(): total size: %u block weight: %u txs: %u fees: %ld sigops %d\n", nSerializeSize, GetBlockWeight(*pblock), nBlockTx, nFees, nBlockSigOpsCost);
 
     // Fill in header
-    pblock->hashPrevBlock  = pindexPrev->GetBlockHash();
+    pblock->hashPrevBlock = pindexPrev->GetBlockHash();
     UpdateTime(pblock, consensus, pindexPrev);
-    pblock->nBits          = GetNextWorkRequired(pindexPrev, pblock, consensus);
-    pblock->nNonce         = 0;
+    pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, consensus);
+    pblock->nNonce = 0;
     pblocktemplate->vTxSigOpsCost[0] = WITNESS_SCALE_FACTOR * GetLegacySigOpCount(*pblock->vtx[0]);
 
     CValidationState state;

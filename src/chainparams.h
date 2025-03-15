@@ -83,6 +83,9 @@ public:
     const std::vector<SeedSpec6>& FixedSeeds() const { return vFixedSeeds; }
     const CCheckpointData& Checkpoints() const { return checkpointData; }
     const ChainTxData& TxData() const { return chainTxData; }
+    const CAmount& DeveloperFee() const { return nDeveloperFee; }
+    const CAmount& DeveloperFeeStart() const { return nDeveloperFeeStart; }
+    const std::string& DeveloperFeeAddress() const { return strDeveloperFeeAddress; }
 
 protected:
     CChainParams() {}
@@ -103,6 +106,9 @@ protected:
     bool fMineBlocksOnDemand;
     CCheckpointData checkpointData;
     ChainTxData chainTxData;
+    CAmount nDeveloperFee;
+    CAmount nDeveloperFeeStart;
+    std::string strDeveloperFeeAddress;
 };
 
 /**
